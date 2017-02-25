@@ -1,0 +1,117 @@
+body{
+	background-color: #888;
+}
+footer{
+	background-color: #888;
+	height: 60px;
+
+}
+.top-info{
+	height: 35px;
+	background-color: #888;
+}
+
+.nav-menu{
+	background-color: #333;
+	opacity: 0;
+}
+.navbar-nav > li > a {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  line-height: 20px;
+  transition: padding 0.5s;
+}
+.navbar-nav {
+    float: right;
+ }
+ .navbar-inverse{
+ 	background-color: inherit;
+ 	border: inherit;
+ }
+ .navbar{
+ 	margin-bottom: inherit;
+ 	min-height: 80px;
+ }
+ .navbar-brand img{
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.navbar ul{
+   text-align: center;
+}
+.navbar-toggle{
+	padding: 15px 10px;
+	margin: 15px 0px;
+	border: inherit;
+	transition: padding 0.5s;
+}
+/* dynamical naviigation */
+
+   .headhesive{
+  margin-top: 35px;
+  background: black;
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+   opacity: 1;
+   z-index: 1000;
+}
+
+.headhesive--stick{
+   transition: 0.5s;
+    margin-top: 0px;
+}
+.headhesive--stick .navbar{
+	min-height: 50px;
+}
+
+.headhesive--stick .navbar-toggle{
+	padding: 10px 8px;
+	margin: 10px 0px;
+	border: inherit;
+	transition: 0.5s;
+}
+
+.headhesive--stick .nav > li > a {
+  padding: 20px 15px;
+  transition: padding 0.5s;
+}
+.headhesive--stick .navbar-brand {
+  height: 30px;
+  padding: 10px 10px;
+  transition: 0.5s;
+}
+.headhesive--stick .logotype{
+  width: 80%;
+  height: auto;
+  transition: 0.5s;
+}
+
+/*  */
+
+
+/*  main*/
+.main{
+	height: 1000px;
+}
+
+
+/* RWD */
+
+@media (max-width: 768px) {
+
+    .navbar-nav {
+	    float: inherit;
+    }
+
+    .navbar-nav > li > a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		line-height: 20px;
+}
+.headhesive--stick .nav > li > a {
+  padding: 10px 15px;
+
+}
