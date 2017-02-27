@@ -1,6 +1,13 @@
 body{
 
 }
+hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #E5E3E0;
+  background-color: #E5E3E0;
+  height: 1px;
+}
 header{
 	background-color: #000;
 	height: 60px;
@@ -149,6 +156,12 @@ header{
  * License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
  */.ekko-lightbox-container{position:relative}.ekko-lightbox-nav-overlay{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%}.ekko-lightbox-nav-overlay a{z-index:100;display:block;width:49%;height:100%;padding-top:45%;font-size:30px;color:#fff;text-shadow:2px 2px 4px #000;opacity:0;filter:dropshadow(color=#000000,offx=2,offy=2);-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}.ekko-lightbox-nav-overlay a:empty{width:49%}.ekko-lightbox a:hover{text-decoration:none;opacity:1}.ekko-lightbox .glyphicon-chevron-left{left:0;float:left;padding-left:15px;text-align:left}.ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}.ekko-lightbox .modal-footer{text-align:left}
 
+
+.caption-gallery{
+  text-align: center;
+}
+
+
 /* Order*/
 
 .media-object{
@@ -156,7 +169,26 @@ header{
   max-width: auto;
 }
 
+/* Order */
 
+.info-order{
+  text-align: center;
+}
+
+
+/*about us */
+
+.about_us h2{
+  text-align: center;
+}
+
+
+
+/*contact us */
+
+.caption-contact h2{
+  text-align: center;
+}
 
 /* RWD */
 
