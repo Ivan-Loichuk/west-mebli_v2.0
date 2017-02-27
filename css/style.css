@@ -30,7 +30,11 @@ footer{
  }
  .navbar{
  	margin-bottom: inherit;
- 	min-height: 80px;
+  min-height: auto;
+ }
+ .navbar-brand{
+  padding: 20px 10px;
+  transition: 0.5s;
  }
  .navbar-brand img{
   width: 100%;
@@ -63,10 +67,6 @@ footer{
    transition: 0.5s;
     margin-top: 0px;
 }
-.headhesive--stick .navbar{
-	min-height: 50px;
-}
-
 .headhesive--stick .navbar-toggle{
 	padding: 10px 8px;
 	margin: 10px 0px;
@@ -75,7 +75,7 @@ footer{
 }
 
 .headhesive--stick .nav > li > a {
-  padding: 20px 15px;
+  padding: 15px 15px;
   transition: padding 0.5s;
 }
 .headhesive--stick .navbar-brand {
@@ -84,7 +84,7 @@ footer{
   transition: 0.5s;
 }
 .headhesive--stick .logotype{
-  width: 80%;
+  width: 70%;
   height: auto;
   transition: 0.5s;
 }
