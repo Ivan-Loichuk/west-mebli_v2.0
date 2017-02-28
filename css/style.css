@@ -190,6 +190,74 @@ header{
   text-align: center;
 }
 
+
+/*  footer */
+
+footer{
+  height: auto;
+  background-color: #333;
+}
+
+.left-footer, .center-footer, .right-footer{
+  color: #fff;
+}
+.left-footer h2, .center-footer h2, .right-footer h2{
+    padding: 20px 0;
+    font-size: 16px;
+}
+.left-footer p{
+  font-size: 14px;
+}
+.left-footer div{
+  margin-right:0;
+  padding-top: 20px;
+  margin-left: 1%;
+  color:#fff;
+}
+.left-footer div i{
+  text-align: center;
+  margin-right: 15px;
+  color: #fff;
+  line-height: 38px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px; 
+  background-color: #FF0000;
+  width: 40px;
+  height: 40px;
+}
+.left-footer div i:hover{
+  color: #000;
+}
+.center-footer p{
+  padding: 8px 0;
+  padding-top: 0;
+  font-size: 12px;
+}
+.center-footer h2{
+  padding: 20px 0;
+}
+
+.right-footer ul{
+  list-style: none;
+  padding: 0;
+}
+.right-footer ul li{
+  display: block;
+  padding: 8px 0;
+  padding-top: 0;
+}
+
+.right-footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.right-footer ul li a:hover{
+  color: #FF0000;
+}
+}
+
 /* RWD */
 
 @media (max-width: 768px) {
