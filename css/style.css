@@ -63,10 +63,15 @@ header{
    opacity: 1;
    z-index: 1000;
 }
+.headhesive .nav > li > a{
+ 
+
+}
 
 .headhesive .nav > li > a:hover{
   background-color: #FF0000;
   color: #fff;
+
 } 
 
 .headhesive--stick{
@@ -83,6 +88,7 @@ header{
 .headhesive--stick .nav > li > a {
   padding: 15px 15px;
   transition: padding 0.5s;
+  width: 100%;
 }
 .headhesive--stick .navbar-brand {
   height: 30px;
@@ -183,14 +189,6 @@ header{
 }
 
 
-
-/*contact us */
-
-.caption-contact h2{
-  text-align: center;
-}
-
-
 /*  footer */
 
 footer{
@@ -200,6 +198,9 @@ footer{
 
 .left-footer, .center-footer, .right-footer{
   color: #fff;
+}
+.left-footer{
+  max-width: 300px;
 }
 .left-footer h2, .center-footer h2, .right-footer h2{
     padding: 20px 0;
@@ -229,6 +230,9 @@ footer{
 .left-footer div i:hover{
   color: #000;
 }
+.center-footer{
+  margin-left: 30%;
+}
 .center-footer p{
   padding: 8px 0;
   padding-top: 0;
@@ -236,6 +240,9 @@ footer{
 }
 .center-footer h2{
   padding: 20px 0;
+}
+.right-footer{
+  margin-left: 25%;
 }
 
 .right-footer ul{
@@ -256,7 +263,7 @@ footer{
 .right-footer ul li a:hover{
   color: #FF0000;
 }
-}
+
 
 /* RWD */
 
@@ -270,8 +277,75 @@ footer{
 		padding-top: 10px;
 		padding-bottom: 10px;
 		line-height: 20px;
-}
+     }
 .headhesive--stick .nav > li > a {
   padding: 10px 15px;
 
+}
+
+.left-footer{
+    margin-left: 20px;
+}
+.center-footer{
+    margin-left: 20px;
+}
+.right-footer{
+  margin-left: 20px;
+}
+
+}
+
+
+/*   Contact.html      */
+
+.contact_us{
+  margin-top: 40px;
+  background-color: #fff;
+  padding-top: 15px;
+}
+
+.caption-contact h2{
+  text-align: center;
+}
+.contact-form{
+  padding: 15px 0;
+}
+.contact-form h3{
+   text-align: center;
+}
+.contact-form input{
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #A5B3B1;
+}
+.contact-form textarea{
+  width: 100%;
+  height: 120px;
+}
+.contact-form button{
+  width: 45%;
+  float: right;
+  margin-top: 10px;
+  height: 50px;
+  background-color: #2B4A8F;
+  color: #fff;
+  border:none;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact-form button:hover{
+  background-color: #FF0000;
+  border: none;
+  color: #fff;
+}
+.info-contact{
+  background-color: #2B4A8F;
+  color:#fff;
+  margin: 15px 0;
+  padding: 20px
+}
+.info-contact h2{
+  line-height: 40px;
 }
