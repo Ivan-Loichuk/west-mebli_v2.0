@@ -41,4 +41,52 @@
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row bottom">
+            <div class="col-md-2 col-sm-6 col-xs-12">
+                <p>website@2017</p><hr>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <ul>
+                    <li class="list-gr">Language: </li>
+                    <li class="list-gr"><a href="#">українська</a></li>
+                    <li class="list-gr"><a href="#">русский</a></li>
+                </ul>
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <div class="admin-btn">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            Вхід(admin)
+                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Логин" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Пароль" required>
+
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+        </div>
+    </div>
 </footer>

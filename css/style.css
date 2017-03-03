@@ -1,6 +1,9 @@
 body{
 
 }
+ul {
+    list-style: none;
+}
 hr{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -189,7 +192,6 @@ header{
   text-align: center;
 }
 
-
 /*about us */
 
 .about_us h2{
@@ -254,7 +256,6 @@ footer{
 }
 
 .right-footer ul{
-  list-style: none;
   padding: 0;
 }
 .right-footer ul li{
@@ -271,7 +272,41 @@ footer{
 .right-footer ul li a:hover{
   color: #FF0000;
 }
+.bottom {
+    height: 50px;
+    background-color: #000;
+}
 
+.bottom .list-gr {
+    display: inline;
+    padding: 10px 15px;
+}
+.bottom p{
+    padding: 10px 30px;
+    color: white;
+}
+.bottom ul{
+    padding: 10px 0;
+}
+.bottom .dropdown-menu{
+    top: -200px;
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+}
+#login-dp .help-block{
+    font-size:12px
+}
+#login-dp .bottom{
+    border-top:1px solid #ddd;
+    clear:both;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
 
 /* RWD */
 
@@ -300,6 +335,9 @@ footer{
 .right-footer{
   margin-left: 20px;
 }
+    #login-dp .bottom{
+        border-top:0 none;
+    }
 
 }
 
