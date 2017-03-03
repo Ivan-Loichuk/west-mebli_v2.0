@@ -10,8 +10,7 @@ hr{
 }
 header{
 	background-color: #000;
-	height: 60px;
-
+	height: 100px;
 }
 .nav-menu{
 	background-color: #333;
@@ -32,7 +31,7 @@ header{
  }
  .navbar{
  	margin-bottom: inherit;
-  min-height: auto;
+    min-height: auto;
  }
  .navbar-brand{
   padding: 25px 10px;
@@ -56,7 +55,7 @@ header{
 /* dynamical naviigation */
 
    .headhesive{
-  background: black;
+  background: #000;
   position: fixed;
   width: 100%;
   transition: 0.5s;
@@ -65,7 +64,6 @@ header{
 }
 .headhesive .nav > li > a{
  
-
 }
 
 .headhesive .nav > li > a:hover{
@@ -165,6 +163,16 @@ header{
 
 .caption-gallery{
   text-align: center;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 550px;
 }
 
 
@@ -348,4 +356,42 @@ footer{
 }
 .info-contact h2{
   line-height: 40px;
+}
+
+
+
+/* galery */
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.col-sm-3 a {
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: all 3s ease;
+}
+
+.col-sm-3 a:hover {
+    border: 1px solid #ff4647;
+    border-radius: 100% 60% / 30% 10%;
+    background: linear-gradient(rgba(56,123,131,0.7),rgba(56,123,131,0.7));
+}
+
+.galery-item .img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+    height: inherit;
 }
