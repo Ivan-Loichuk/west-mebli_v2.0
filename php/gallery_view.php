@@ -42,79 +42,10 @@ include_once "header.php"
 
 <?php endif; ?>
 
+<?php include_once  "delete-image.php"; ?>
 <?php include_once "view-gallery.php"; ?>
-
-<div class="container">
-    <div class="row">
-        <h2 class="col-xs-12">Gallery</h2>
-    </div><!-- /row -->
-    <div class="row">
-        <div class="col-xs-12 col-sm-3">
-            <div class="list-group">
-                <span href="#" class="list-group-item active">
-                Apples
-                </span>
-                <a href="#" class="list-group-item">
-                    Honey Crisp
-                </a>
-                <a href="#" class="list-group-item">
-                    Fuji
-                </a>
-                <a href="#" class="list-group-item">
-                    Crimson
-                </a>
-                <a href="#" class="list-group-item">
-                    Gala
-                </a>
-                <a href="#" class="list-group-item">
-                    Golden Delicious
-                </a>
-                <a href="#" class="list-group-item">
-                    Red Delicious (Yuck)
-                </a>
-            </div><!-- /list-group -->
-        </div><!-- /col -->
-        <div class="col-xs-12 col-sm-9">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#" class="thumbnail">
-                        <img src="//placehold.it/300x450">
-                    </a>
-                </div><!-- /col -->
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#" class="thumbnail">
-                        <img src="//placehold.it/300x450">
-                    </a>
-                </div><!-- /col -->
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#" class="thumbnail">
-                        <img src="//placehold.it/300x450">
-                    </a>
-                </div><!-- /col -->
-            </div><!-- /row -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#" class="thumbnail">
-                        <img src="//placehold.it/300x450">
-                    </a>
-                </div><!-- /col -->
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#" class="thumbnail">
-                        <img src="//placehold.it/300x450">
-                    </a>
-                </div><!-- /col -->
-                <div class="col-xs-12 col-sm-4">
-                    <a href="#" class="thumbnail">
-                        <img src="//placehold.it/300x450">
-                    </a>
-                </div><!-- /col -->
-            </div><!-- /row -->
-        </div><!-- /col -->
-    </div><!-- /row -->
-</div><!-- /container -->
 
 <?php  include "footer.php"?>
 <?php  include "js_links.php"?>
 </body>
 </html>
-

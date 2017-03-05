@@ -6,7 +6,7 @@ if(isset($_POST['Submit']))
 {
     if (is_uploaded_file($_FILES['image']['tmp_name'])) {
         $typ = $_FILES['image']['type'];
-        if ($typ == 'image/jpeg') {
+        if ($typ == 'image/jpeg' || $typ == 'image/jpg' || $typ == 'image/png') {
 
             $location="../img/foto_original/" . $_FILES["image"]["name"];
             $location_mini="../img/miniaturki/mini-". $_FILES["image"]["name"];
