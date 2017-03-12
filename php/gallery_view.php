@@ -28,7 +28,7 @@ include_once "header.php"
                                <td><label for="image"> Вибери фото: </label></td><td> <input type="file" name="image" class="ed"></td>
                                <td><label for="name"> Назва картинки </label></td><td> <input name="name" type="text" class="ed" id="brnu" /></td>
                                <td><label for="alt"> Алтернативний опис: </label></td><td>  <input name="alt" type="text" class="ed" id="brnu" /></td>
-                               <td><label for="kategoria">  </label></td><td>  <input type="hidden" name="kategoria" value="2" ></td>
+                               <td><label for="kategoria">  </label></td><td>  <input type="hidden" name="kategoria" value="3" ></td>
                                <td><label for="Submit"> </label></td><td>   <input type="submit" name="Submit" value="Додати" id="button1" /></td>
                            </tr>
                        </table>
@@ -43,7 +43,7 @@ include_once "header.php"
 <?php endif; ?>
 
 <?php include_once  "delete-image.php"; ?>
-<?php include_once "view-gallery.php"; ?>
+<?php include_once  "view-gallery.php"; ?>
 
 <?php  include "footer.php"?>
 <?php  include "js_links.php"?>

@@ -1,6 +1,5 @@
 <?php
 require "db.php";
-
 $data = $_POST;
 if(isset($_POST['Submit']))
 {
@@ -53,7 +52,7 @@ if(isset($_POST['Submit']))
                 $photos->location_mini = $location_mini;
                 $photos->name_photo = $data['name'];
                 $photos->alt = $data['alt'];
-                $photos->id_kategorii = $data['kategoria'];
+                $photos->id_kategorii = $_SESSION['kategoria'];
 
                 R::store($photos);
                 echo '<div style="color: green;"> Додано!</div><hr>';
@@ -72,4 +71,5 @@ if(isset($_POST['Submit']))
         echo '<div style="color: red;">' . array_shift($errors) . '</div><hr>';
     }
 }
+header('Location: gallery_view.php?type='.$_SESSION['type']);
 ?>

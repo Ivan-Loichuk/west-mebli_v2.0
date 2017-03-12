@@ -3,6 +3,8 @@
 require "db.php";
 $data = $_POST;
 session_start();
+$_SESSION['kategoria'];
+$_SESSION['type'];
 
 if( isset($data['do_login'])){
     $errors = array();

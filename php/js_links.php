@@ -2,4 +2,4 @@
 <script src="../js/bootstrap.js"></script>
 <script src="../js/headhesive.min.js"></script>
 <script src="../js/js.js"></script>
-<script src="/rawgithub.com/ashleydw/lightbox/master/dist/ekko-lightbox.js"></script>
+<script src="js/bootstrap-lightbox.min.js"></script>

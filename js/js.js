@@ -63,3 +63,9 @@ $(document).ready(function(){
                 $('#carousel-text').html($('#slide-content-'+id).html());
         });
 });
+
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
