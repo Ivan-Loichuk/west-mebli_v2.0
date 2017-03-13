@@ -154,7 +154,8 @@ header{
 .panel .panel-footer div { width: 15px; display: inline; font: 300 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #34495e; text-align: center; background-color: transparent !important; border: none !important; } 
 
 .modal-title { font: 400 normal 1.625em "Roboto",Arial,Verdana,sans-serif; }
-.modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; } 
+.modal-footer { font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; }
+
 
 /*!
  * Lightbox for Bootstrap 3 by @ashleydw
@@ -405,4 +406,9 @@ footer{
 }
 
 /*   SLIDEBAR */
+/*  Gallery types */
 
+.gallery img{
+    width: 100%;
+    height: auto;
+}

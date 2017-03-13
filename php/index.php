@@ -1,5 +1,4 @@
 <?php
-
  $data = $_POST;
 ?>
 <!doctype html>
@@ -12,6 +11,7 @@
     <title></title>
     <?php include_once "css_links.php" ?>
 </head>
+<body>
 <?php
   $links = array('Home' => '#carousel', 'gallery' => '#galeria', 'order' => '#order', 'about' => '#about_us', 'contact' => '#contact_us');
   $menu = "menu";
@@ -83,112 +83,86 @@
 
     <div class="container mt40">
         <div class="row">
-            <article class="col-xs-12 col-sm-6 col-md-3">
+            <article class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <a href="gallery_view.php" title="Nature Portfolio" class="zoom" >
-                            <img src="http://lorempixel.com/350/350/nature/4" alt="Nature Portfolio" />
+                        <a href="gallery_view.php?type=cabinets" title="шафи купе на замовлення" class="zoom" >
+                            <img src="../img/titles/cabinets.jpg" alt="Nature Portfolio" />
                             <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <h4><a href="#" title="Nature Portfolio">Nature</a></h4>
+                        <h4><a href="gallery_view.php?type=cabinets" title="Nature Portfolio">Шафи купе</a></h4>
                     </div>
                 </div>
             </article>
 
-            <article class="col-xs-12 col-sm-6 col-md-3">
+            <article class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <a href="http://lorempixel.com/350/350/food/2" title="Food Portfolio" class="zoom">
-                            <img src="http://lorempixel.com/350/350/food/2" alt="Food Portfolio" />
+                        <a href="gallery_view.php?type=kitchen" title="Food Portfolio" class="zoom">
+                            <img src="../img/titles/kitchen.jpg" alt="Food Portfolio" />
                             <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <h4><a href="#" title="Food Portfolio">Food</a></h4>
+                        <h4><a href="gallery_view.php?type=kitchen" title="Food Portfolio">Кухні</a></h4>
                     </div>
                 </div>
             </article>
 
-            <article class="col-xs-12 col-sm-6 col-md-3">
+            <article class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <a href="http://lorempixel.com/350/350/sports/3" title="Sports Portfolio" class="zoom" >
-                            <img src="http://lorempixel.com/350/350/sports/3" alt="Sports Portfolio" />
+                        <a href="gallery_view.php?type=bedroom" title="Sports Portfolio" class="zoom" >
+                            <img src="../img/titles/bedroom.jpg" alt="Sports Portfolio" />
                             <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <h4><a href="#" title="Sports Portfolio" title="Sports">Sports</a></h4>
+                        <h4><a href="gallery_view.php?type=bedroom" title="Sports Portfolio" title="Sports">Спальні</a></h4>
                     </div>
                 </div>
             </article>
 
-            <article class="col-xs-12 col-sm-6 col-md-3">
+            <article class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <a href="http://lorempixel.com/350/350/people/1" title="People Portfolio" class="zoom" >
-                            <img src="http://lorempixel.com/350/350/people/1" alt="People Portfolio" />
+                        <a href="gallery_view.php?type=children" title="People Portfolio" class="zoom" >
+                            <img src="../img/titles/children.jpg" alt="People Portfolio" />
                             <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <h4><a href="#" title="People Portfolio">People</a></h4>
+                        <h4><a href="gallery_view.php?type=children" title="People Portfolio">В дитячу</a></h4>
                     </div>
                 </div>
             </article>
 
-            <article class="col-xs-12 col-sm-6 col-md-3">
+            <article class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <a href="http://lorempixel.com/350/350/nature/4" title="Nature Portfolio" class="zoom" >
-                            <img src="http://lorempixel.com/350/350/nature/4" alt="Nature Portfolio" />
+                        <a href="gallery_view.php?type=other" title="Nature Portfolio" class="zoom" >
+                            <img src="../img/titles/other.jpg" alt="Nature Portfolio" />
                             <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <h4><a href="#" title="Nature Portfolio">Nature</a></h4>
+                        <h4><a href="gallery_view.php?type=other" title="Nature Portfolio">Стінки</a></h4>
                     </div>
                 </div>
             </article>
 
-            <article class="col-xs-12 col-sm-6 col-md-3">
+            <article class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <a href="http://lorempixel.com/350/350/food/2" title="Food Portfolio" class="zoom">
-                            <img src="http://lorempixel.com/350/350/food/2" alt="Food Portfolio" />
+                        <a href="gallery_view.php?type=office" title="Food Portfolio" class="zoom">
+                            <img src="../img/titles/office.jpg" alt="Food Portfolio" />
                             <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <h4><a href="#" title="Food Portfolio">Food</a></h4>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <a href="http://lorempixel.com/350/350/food/2" title="Food Portfolio" class="zoom">
-                            <img src="http://lorempixel.com/350/350/food/2" alt="Food Portfolio" />
-                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-                        </a>
-                    </div>
-                    <div class="panel-footer">
-                        <h4><a href="#" title="Food Portfolio">Food</a></h4>
-                    </div>
-                </div>
-            </article>
-            <article class="col-xs-12 col-sm-6 col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <a href="http://lorempixel.com/350/350/food/2" title="Food Portfolio" class="zoom" >
-                            <img src="http://lorempixel.com/350/350/food/2" alt="Food Portfolio" />
-                            <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
-                        </a>
-                    </div>
-                    <div class="panel-footer">
-                        <h4><a href="#" title="Food Portfolio">Food</a></h4>
+                        <h4><a href="gallery_view.php?type=office" title="Food Portfolio">Офісні меблі</a></h4>
                     </div>
                 </div>
             </article>
@@ -339,12 +313,8 @@
         </div>
     </div>
 </section>
-
 <?php  include "footer.php"?>
 <?php  include "js_links.php"?>
-<body>
-
-
 
 </body>
 </html>

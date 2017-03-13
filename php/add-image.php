@@ -23,8 +23,8 @@ if(isset($_POST['Submit']))
 
                 list($width, $height) = getimagesize($location);
 
-                $wys = 200;
-                $szer = 300;
+                $wys = 350;
+                $szer = 450;
                 $skalaWys = 1;
                 $skalaSzer = 1;
                 $skala = 1;
