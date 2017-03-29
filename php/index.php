@@ -9,6 +9,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
+
+    <script>document.write('<script src="http://' + (location.host ||
+            'localhost').split(':')[0] +
+            ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
     <?php include_once "css_links.php" ?>
 </head>
 <body>
@@ -19,60 +24,74 @@
 ?>
 
 <section class="main" id="carousel">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
+   <div class="container">
+       <div class="row">
+            <div class="col-md-6">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="../img/slide1.jpg" alt="Chania">
-                <div class="carousel-caption">
-                    <h3>Chania</h3>
-                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../img/kitchen_carousel.JPG" alt="Chania">
+                            <div class="carousel-caption">
+                                <h3>Стильні кухня</h3>
+                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../img/slide2.jpg" alt="Chania">
+                            <div class="carousel-caption">
+                                <h3>Сучасні офісні меблі</h3>
+                                <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../img/kuhnia_cherwona_na_zamowlenia.jpg" alt="Flower">
+                            <div class="carousel-caption">
+                                <h3>Flowers</h3>
+                                <p>Beatiful flowers in Kolymbari, Crete.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../img/slidsde1.jpg" alt="Flower">
+                            <div class="carousel-caption">
+                                <h3>Flowers</h3>
+                                <p>Beatiful flowers in Kolymbari, Crete.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
+        
+        <div class="col-md-6">
+                   <p><h2>Замовлення меблів у Рівному</h2>
+                Виготовлення корпусних меблів на замовлення. Можна зробити індивідуальне замовлення на будь-які корпусні меблі: сучасні кухні, кухні з вмонтованою технікою, класичні кухні, шафи-купе, спальні, прихожі, офісні меблі та ін. Індивідуальний підхід до кожного клієнта. Можливість підібрати власний дизайн. Встановлення безкоштовно!! <br>
 
-            <div class="item">
-                <img src="../img/slide2.jpg" alt="Chania">
-                <div class="carousel-caption">
-                    <h3>Chania</h3>
-                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="../img/kuhnia_cherwona_na_zamowlenia.jpg" alt="Flower">
-                <div class="carousel-caption">
-                    <h3>Flowers</h3>
-                    <p>Beatiful flowers in Kolymbari, Crete.</p>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="../img/slidsde1.jpg" alt="Flower">
-                <div class="carousel-caption">
-                    <h3>Flowers</h3>
-                    <p>Beatiful flowers in Kolymbari, Crete.</p>
-                </div>
-            </div>
+                Ми виконуємо замовлення різної складності – від полички до масштабних об’єктів. Компанія «WEST-MEBLI» пропонує професійні послуги дизайну меблів на замовлення та виготовлення меблів на замовлення у Рівному для Вашого дому та офісу. Ми пропонуємо меблі на замовлення як по індивідуальному дизайну, так і меблі серійного виробництва на Ваш смак. Ми можемо по бажанню замовника вносити зміни і розробляти дизайн кухні персонально під Ваші індивідуальні потреби. Меблі будуть слугувати довгі роки і радуватимуть своєю якістю, неповторністю та доступними цінами. Ми стараємось для Вас!</p>
+           </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
+
 </section>
 
 <section class="galeria" id="galeria">
@@ -185,58 +204,67 @@
             <div class="col-xs-12 col-md-6">
                 <div class="media">
                     <div class="media-left">
-                        <img class="media-object" src="../img/car1.jpg" alt="...">
+                        <img class="media-object" src="../img/contact-us.jpg" alt="...">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">1. Зателефонуйте нам.</h4>
+                        1. Зателефонуйте нам.
                         Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <img class="media-object" src="../img/car1.jpg" alt="...">
+                        <img class="media-object" src="../img/SPOTKANIE.jpg" alt="...">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.
+                        2. Зустріч.
+                        У вигідний для вас час, завітаємо до вас, щоб зрозуміти ваші потреби, виконати попередні заміри і
+                        обговорити особливості що стосуються функціональності і дизайну нових меблів.
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <img class="media-object" src="../img/car1.jpg" alt="...">
+                        <img class="media-object" src="../img/PROJEKT.jpg" alt="...">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.
+                        3. Проект майбутніх меблів.
+                        Наш досвідчений дизайнер виконає для вас індивідуальний проект. Більше того, ви отримаєте повну інформацію що до цін. Якщо ви вже маєте проект - пришліть його нам - ми швидко представим вам вартість його реалізації.
                     </div>
                 </div>
             </div>
             <div class="col-xs-12 col-md-6">
                 <div class="media">
                     <div class="media-left">
-                        <img class="media-object" src="../img/car1.jpg" alt="...">
+                        <img class="media-object" src="../img/UMOWA.jpg" alt="...">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.
+                        4. Договір.
+                        По узгодженню проекту ми підготуємо договір, у якому будуть описані особливості вспівпраці,
+                        перелік робіт, час реалізації а також спосіб оплати.
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <img class="media-object" src="../img/car1.jpg" alt="...">
+                        <img class="media-object" src="../img/REALIZACJA.jpg" alt="...">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.
+                        5. Реалізація проекту.
+                        Після підписання договору і отримання авансу, розпочнемо виготовлення ваших меблів.
+                        Час реалізації проекту залежить від ступіня важкості проекту, вибраних матеріалів.
                     </div>
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <img class="media-object" src="../img/car1.jpg" alt="...">
+                        <img class="media-object" src="../img/TRANSPORT.jpg" alt="...">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.
+                        6. Доставка і встановлення.
+                        Встановлення нових меблів виконаємо швидко й професійно - звичайно в зручний для вас час.
                     </div>
                 </div>
             </div>

@@ -15,9 +15,12 @@ include_once "db.php";
 $links = array('Home' => 'index.php', 'gallery' => 'index.php#galeria', 'order' => 'index.php#order', 'about' => 'index.php#about_us', 'contact' => 'index.php#contact_us');
 $menu = "menu2";
 include_once "header.php"
+
 ?>
 
 <?php if(isset($_SESSION['logged_user'])) : ?>
+
+<!--    add images in gallery -->
    <div class="container">
        <div class="row">
            <div class="col-md-12">
@@ -25,11 +28,12 @@ include_once "header.php"
                    <form action="add-image.php" method="post" enctype="multipart/form-data">
                        <table class="add_img">
                            <tr>
-                               <td><label for="image"> Вибери фото: </label></td><td> <input type="file" name="image" class="ed"></td>
-                               <td><label for="name"> Назва картинки </label></td><td> <input name="name" type="text" class="ed" id="brnu" /></td>
-                               <td><label for="alt"> Алтернативний опис: </label></td><td>  <input name="alt" type="text" class="ed" id="brnu" /></td>
-                               <td><label for="kategoria">  </label></td><td>  <input type="hidden" name="kategoria" value="3" ></td>
-                               <td><label for="Submit"> </label></td><td>   <input type="submit" name="Submit" value="Додати" id="button1" /></td>
+                               <td><span class="btn btn-default btn-file">
+                                       Фото<input type="file" name="image" class="ed">
+                                     </span></td>
+                               <td> <input name="name" type="text" class="ed" id="brnu" placeholder="Назва картинки"/></td>
+                               <td> <input name="alt" type="text" class="ed" id="brnu" placeholder="Альтернативний опис"/></td>
+                               <td> <input type="submit" name="Submit" value="Додати" id="submit_add_foto"/></td>
                            </tr>
                        </table>
 
@@ -42,7 +46,8 @@ include_once "header.php"
 
 <?php endif; ?>
 
-<?php include_once  "delete-image.php"; ?>
+
+<?php include_once  "delete-image.php"; ?> <!--   include "delete" option -->
 <?php include_once  "view-gallery.php"; ?>
 
 <?php  include "footer.php"?>

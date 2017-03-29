@@ -3,3 +3,4 @@
 <script src="../js/headhesive.min.js"></script>
 <script src="../js/js.js"></script>
 <script src="js/bootstrap-lightbox.min.js"></script>
+<script src="../js/lightbox.js"></script>

@@ -15,7 +15,7 @@ if( isset($data['do_login'])){
             $_SESSION['errors[]'];
 
             $_SESSION['logged_user']=$user;
-            header("Location: gallery_view.php?type=furniture");
+            header("Location: gallery_view.php?type=cabinets");
         }
         else{
             $errors[]='Неправильний пароль';

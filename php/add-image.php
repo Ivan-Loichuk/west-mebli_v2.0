@@ -35,8 +35,8 @@ if(isset($_POST['Submit']))
                 if ($skalaWys <= $skalaSzer) $skala = $skalaWys;
                 else $skala = $skalaSzer;
 
-                $newH = $height*$skala;
-                $newW = $width*$skala;
+                $newH = 350;
+                $newW = 500;
 
 
                 $nowe = imagecreatetruecolor($newW, $newH);
@@ -62,7 +62,6 @@ if(isset($_POST['Submit']))
                 echo '<div style="color: red;">'.array_shift($errors).'</div><hr>';
             }
         }
-
         else echo "Неправильний тип файлу";
     }
 
@@ -71,5 +70,5 @@ if(isset($_POST['Submit']))
         echo '<div style="color: red;">' . array_shift($errors) . '</div><hr>';
     }
 }
-header('Location: gallery_view.php?type='.$_SESSION['type']);
+//header('Location: gallery_view.php?type='.$_SESSION['type']);
 ?>

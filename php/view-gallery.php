@@ -2,7 +2,7 @@
     <div class="container gallery">
         <div class="row">
             <div class="col-sm-3">
-                <nav class="nav-sidebar">
+               <nav class="nav-sidebar">   <!-- left slidebar navigation-->
                     <ul class="nav tabs">
                         <li class="active"><a href="gallery_view.php?type=cabinets" >Шафи купе</a></li>
                         <li class=""><a href="gallery_view.php?type=kitchen">Кухні</a></li>
@@ -18,7 +18,6 @@
                 <div class="tab-content">
                     <div class="row">
                         <?php
-
                         if(isset($_GET['type'])){
                             if ($_GET['type'] == "cabinets") {
                                 $_SESSION['kategoria'] = 1;
@@ -52,23 +51,25 @@
                             }
 
                         }
-
                         else {
                             $_SESSION['bedroom'] = 1;
                             $_SESSION['type'] = "";
                             get_image(1);
                         }
 
-                        function get_image($id)
+                       function get_image($id)    //  get images from database and view in a gallery
                         {
-                            $result = R::getAll("SELECT * FROM photos where id_kategorii =".$id);
+                            $result = R::getAll("SELECT * FROM photos where id_kategorii =".$id." ORDER BY id DESC");
+                            if(empty($result) == true){
+                                echo " <h3>Галерея пуста! </h3>";
+                            }
+
                             foreach($result as $row) { ?>
 
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="col-md-12">
-                                        <a href="<?php echo $row['location']?>">
-                                            <img  src="<?php echo $row['location_mini'] ?>" name="<?php echo $row['name_photo'] ?>" alt="<?php echo $row['alt'] ?>">
-                                        </a>
+                                        <a class="" href="<?php echo $row['location']?>" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                            <img class="" src="<?php echo $row['location_mini'] ?>" name="<?php echo $row['name_photo'] ?>" alt="<?php echo $row['alt'] ?>"/></a>
                                     </div>
                                     <?php  $ident = $row['id']; ?>
                                 <?php if(isset($_SESSION['logged_user'])) : ?>
@@ -83,12 +84,10 @@
 
                                 <?php endif; ?>
                                 </div>
-
-
                             <?php } }?>
-                    </div>
-                </div>
+                    </div> <!-- end row -->
+                </div> <!-- end tab-content -->
             </div>
-        </div>
+        </div>  <!-- end row -->
     </div><!-- container-->
 </section>

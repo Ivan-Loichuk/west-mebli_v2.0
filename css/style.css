@@ -112,7 +112,7 @@ header{
 }
 
 
-/*  main*/
+/*  main carousel*/
 
 
 /*gallery*/
@@ -147,7 +147,7 @@ header{
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
 }
 .panel .panel-footer { padding: 8px !important; background-color: #f9f9f9 !important; border-bottom-right-radius: 0 !important; border-bottom-left-radius: 0 !important; }  
-.panel .panel-footer h4 { display: inline; font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #34495e margin: 0 !important; padding: 0 !important; }
+.panel .panel-footer h4 { display: inline; font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif; color: #34495e; margin: 0 !important; padding: 0 !important; }
 .panel .panel-footer i.glyphicon { display: inline; font-size: 1.125em; cursor: pointer; }
 .panel .panel-footer i.glyphicon-thumbs-up { color: #1abc9c; }
 .panel .panel-footer i.glyphicon-thumbs-down { color: #e74c3c; padding-left: 5px; }
@@ -176,18 +176,38 @@ header{
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: 550px;
+  height: 350px;
+  
+}
+.main{
+  margin-top: 20px;
 }
 
+.gallery{
+   margin-top: 20px;
+}
+
+
+/* Slidebar */
+
+.nav-sidebar{
+    background-color: #2B4A8F;
+    border-radius: 1px;
+    margin-bottom: 15px;
+}
+.nav-sidebar a{
+    color: #fff;
+}
+.nav-sidebar .nav > li > a:hover{
+    background-color: #336cba;
+}
 
 /* Order*/
 
 .media-object{
   max-height: 20%;
-  max-width: auto;
 }
 
-/* Order */
 
 .info-order{
   text-align: center;
@@ -402,13 +422,71 @@ footer{
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    height: auto;
+    /* height: auto; */
 }
 
-/*   SLIDEBAR */
+
 /*  Gallery types */
 
 .gallery img{
     width: 100%;
     height: auto;
+}
+/*   add images in gallery.... form */
+.add_img td{
+    padding: 5px;
+    width: 5%;
+
+}
+
+.add_img input{
+    height: 40px;
+    width: 100%;
+
+}
+.add_img input[type=submit]{
+    background: #182334;
+    height: 40px;
+    width: 50%;
+    border: inherit;
+    color: white;
+    border-radius: 5px;
+}
+.add_img input[type=submit]:hover{
+
+    background-color: #224863;
+}
+
+
+/*  input file*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    float: right;
+    height: 40px;
+    width: 50%;
+    color: white;
+    border-radius: 5px;
+    background: #182334;
+    line-height: 25px;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    cursor: inherit;
+    display: block;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #224863;
+    color: white;
 }
