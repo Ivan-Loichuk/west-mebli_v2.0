@@ -310,11 +310,15 @@ footer{
     padding: 10px 0;
 }
 .bottom .dropdown-menu{
-    top: -200px;
+    top: -230px;
+}
+.dropdown .dropdown-menu a {
+    padding-bottom: 20px;
 }
 
 #login-dp{
     min-width: 250px;
+    min-height: 220px;
     padding: 14px 14px 0;
     overflow:hidden;
 }
@@ -328,6 +332,18 @@ footer{
 #login-dp .form-group {
     margin-bottom: 10px;
 }
+.language input{
+  background-color: inherit;
+    border: inherit;
+}
+.language input:hover{
+   border: inherit;
+    color: red;
+}
+.lang-ul{
+    display: -webkit-box;
+}
+
 
 /* RWD */
 

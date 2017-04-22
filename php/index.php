@@ -1,5 +1,6 @@
 <?php
  $data = $_POST;
+$_GET['type'] = "lang_ua";
 ?>
 <!doctype html>
 <html lang="en">
@@ -111,7 +112,7 @@
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <h4><a href="gallery_view.php?type=cabinets" title="Nature Portfolio">Шафи купе</a></h4>
+                        <h4><a href="gallery_view.php?type=cabinets?" title="Nature Portfolio">Шафи купе</a></h4>
                     </div>
                 </div>
             </article>

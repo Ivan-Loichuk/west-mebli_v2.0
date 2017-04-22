@@ -11,7 +11,7 @@ if(isset($_POST['Submit']))
             $location_mini="../img/miniaturki/mini-". $_FILES["image"]["name"];
 
             if(R::count('photos', "location = ? ", array($location)) > 0){
-                $errors[] = 'Таке фото вже існує!!';
+                $errors = 'Таке фото вже існує!!';
             }
             if(empty($errors)) {
 
@@ -28,15 +28,15 @@ if(isset($_POST['Submit']))
                 $skalaWys = 1;
                 $skalaSzer = 1;
                 $skala = 1;
-                if ($width > $szer)
-                    $skalaSzer = $szer/$width;
-                if ($height > $wys)
-                    $skalaWys = $wys/$height;
-                if ($skalaWys <= $skalaSzer) $skala = $skalaWys;
-                else $skala = $skalaSzer;
+                if ($width > $height) {
+                    $newH = 210;
+                    $newW = 350;
+                }
+                if ($height > $width){
+                    $newH = 530;
+                    $newW = 300;
+                }
 
-                $newH = 350;
-                $newW = 500;
 
 
                 $nowe = imagecreatetruecolor($newW, $newH);
@@ -55,20 +55,22 @@ if(isset($_POST['Submit']))
                 $photos->id_kategorii = $_SESSION['kategoria'];
 
                 R::store($photos);
-                echo '<div style="color: green;"> Додано!</div><hr>';
+
+                $errors = "Фото доданo)";
+                $_SESSION['errors'] = $errors;
             }
             else
             {
-                echo '<div style="color: red;">'.array_shift($errors).'</div><hr>';
+                $_SESSION['errors'] = $errors;
             }
         }
         else echo "Неправильний тип файлу";
     }
 
     else {
-        $errors[] = 'Не вибрано фото!!';
-        echo '<div style="color: red;">' . array_shift($errors) . '</div><hr>';
+        $errors = 'Не вибрано фото!!';
+        $_SESSION['errors'] = $errors;
     }
 }
-//header('Location: gallery_view.php?type='.$_SESSION['type']);
+header('Location: gallery_view.php?type='.$_SESSION['type']);
 ?>

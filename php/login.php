@@ -12,7 +12,7 @@ if( isset($data['do_login'])){
             session_start();
             $_SESSION['kategoria'];
             $_SESSION['type'];
-            $_SESSION['errors[]'];
+            $_SESSION['errors'] = null;
 
             $_SESSION['logged_user']=$user;
             header("Location: gallery_view.php?type=cabinets");
@@ -23,10 +23,13 @@ if( isset($data['do_login'])){
     }
     else{
         $errors[] = 'Користувача з таким логіном не знайдено';
+
     }
 
     if(!empty($errors)){
         echo '<div style="color: red;">'. array_shift($errors).'</div><hr>';
+        $errors = null;
+        //header('Location: index.php#footer');
     }
 }
 ?>

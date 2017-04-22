@@ -1,0 +1,23 @@
+<?xml version='1.0' standalone='yes'?>
+<movies>
+ <movie>
+  <title>PHP: Появление Парсера</title>
+  <characters>
+
+	   <character>
+	    <nav_menu type='1'>Главная</nav_menu>
+	    <nav_menu type='2'>Каталог мебели</nav_menu>
+	    <nav_menu type='3'>Как заказать?</nav_menu>
+	    <nav_menu type='4'>О нас</nav_menu>
+        <nav_menu type='5'>Контакты</nav_menu>
+	   </character>
+
+
+	   <character>
+	    <name>Mr. Coder</name>
+	    <actor>El Act&#211;r</actor>
+	   </character>
+
+  </characters>
+ </movie>
+</movies>

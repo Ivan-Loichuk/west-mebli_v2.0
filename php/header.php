@@ -1,4 +1,19 @@
+<?php
 
+if (isset($_POST['lang_ru'])) {
+    $movies = simplexml_load_file('../xml/lang-ru.xml');
+    setcookie("lang", "lang-ru", time()+3600*24);
+}
+elseif(isset($_POST['lang_ua'])){
+    $movies = simplexml_load_file('../xml/lang-ua.xml');
+    setcookie("lang", "lang-ua", time()+3600*24);
+}
+else {
+    if (isset($_COOKIE["lang"])) {
+        $movies = simplexml_load_file('../xml/' . $_COOKIE["lang"] . '.xml');
+    }
+}
+?>
 <header>
     <div class="nav-menu">
         <div class="container">
@@ -15,12 +30,34 @@
 
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
+
                             <ul class="nav navbar-nav menu">
-                                <li role="presentation" class=""><a href="<?php echo $links['Home'];?>">Головна</a></li>
-                                <li role="presentation"><a href="<?php echo $links['gallery'];?>">Галерея</a></li>
-                                <li role="presentation"><a href="<?php echo $links['order'];?>">Як замовити?</a></li>
-                                <li role="presentation"><a href="<?php echo $links['about'];?>">Про нас</a></li>
-                                <li role="presentation"><a href="<?php echo $links['contact'];?>">Контакти</a></li>
+                              <?php  foreach ($movies->movie->characters->character->nav_menu as $nav_menu) {
+
+                                switch((string) $nav_menu['type']) { // Получение атрибутов элемента по индексу
+                                case '1':
+                                echo '<li role="presentation" class=""><a href="'. $links['Home'] . '">'.$nav_menu.'</a></li>';
+                                break;
+                                case '2':
+                                echo '<li role="presentation" class=""><a href="'. $links['gallery'] . '">'.$nav_menu.'</a></li>';
+                                break;
+                                case '3':
+                                echo '<li role="presentation" class=""><a href="'. $links['order'] . '">'.$nav_menu.'</a></li>';
+                                break;
+                                case '4':
+                                echo '<li role="presentation" class=""><a href="'. $links['about'] . '">'.$nav_menu.'</a></li>';
+                                break;
+                                case '5':
+                                echo '<li role="presentation" class=""><a href="'. $links['contact'] . '">'.$nav_menu.'</a></li>';
+                                break;
+                                }
+                                }
+                                ?>
+<!--                                <li role="presentation" class=""><a href="--><?php //echo $links['Home'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
+<!--                                <li role="presentation"><a href="--><?php //echo $links['gallery'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
+<!--                                <li role="presentation"><a href="--><?php //echo $links['order'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
+<!--                                <li role="presentation"><a href="--><?php //echo $links['about'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
+<!--                                <li role="presentation"><a href="--><?php //echo $links['contact'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
                             </ul>
                         </div>
                     </nav>

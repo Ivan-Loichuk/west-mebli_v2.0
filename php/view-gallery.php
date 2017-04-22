@@ -1,4 +1,4 @@
-<section>
+<section xmlns:background-image="http://www.w3.org/1999/xhtml">
     <div class="container gallery">
         <div class="row">
             <div class="col-sm-3">
@@ -16,7 +16,6 @@
             <!-- tab content -->
             <div class="col-md-9">
                 <div class="tab-content">
-                    <div class="row">
                         <?php
                         if(isset($_GET['type'])){
                             if ($_GET['type'] == "cabinets") {
@@ -61,15 +60,19 @@
                         {
                             $result = R::getAll("SELECT * FROM photos where id_kategorii =".$id." ORDER BY id DESC");
                             if(empty($result) == true){
-                                echo " <h3>Галерея пуста! </h3>";
+                                echo '<div class="col-xs-12 col-sm-4"> <h3>Галерея пуста! </h3>';
                             }
-
+                            else
                             foreach($result as $row) { ?>
 
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="col-md-12">
+<!--                                        <a class="" href="--><?php //echo $row['location']?><!--" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">-->
+<!--                                            <img class="" src="--><?php //echo $row['location_mini'] ?><!--" name="--><?php //echo $row['name_photo'] ?><!--" alt="--><?php //echo $row['alt'] ?><!--"/></a>-->
+
                                         <a class="" href="<?php echo $row['location']?>" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                            <img class="" src="<?php echo $row['location_mini'] ?>" name="<?php echo $row['name_photo'] ?>" alt="<?php echo $row['alt'] ?>"/></a>
+                                            <div style=" background-image: url('<?php echo $row['location_mini']?>'); background-repeat: no-repeat; background-size: cover; background-position: center; height:150px; width: 100%;"></div>
+                                        </a>
                                     </div>
                                     <?php  $ident = $row['id']; ?>
                                 <?php if(isset($_SESSION['logged_user'])) : ?>
@@ -85,7 +88,6 @@
                                 <?php endif; ?>
                                 </div>
                             <?php } }?>
-                    </div> <!-- end row -->
                 </div> <!-- end tab-content -->
             </div>
         </div>  <!-- end row -->

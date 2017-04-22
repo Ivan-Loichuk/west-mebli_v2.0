@@ -1,6 +1,5 @@
 
-
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-xs- col-sm-4 col-md-4">
@@ -49,23 +48,24 @@
                 <p>website@2017</p><hr>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12">
-                <ul>
+                <ul class="lang-ul">
                     <li class="list-gr">Language: </li>
-                    <li class="list-gr"><a href="#">українська</a></li>
-                    <li class="list-gr"><a href="#">русский</a></li>
+                    <li><form class="language" action="index.php" method="post" >
+                        <input name="lang_ru" type="submit" value="русский">
+                        <input name="lang_ua" type="submit" value="українська">
+                        </form> </li>
                 </ul>
                 <hr>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="admin-btn">
                     <ul>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
                             <ul id="login-dp" class="dropdown-menu">
                                 <li>
-                                    <div class="row">
                                         <div class="col-md-12">
-                                            Вхід(admin)
+                                            <h4>Вхід(admin)</h4>
                                             <form class="form" action="login.php" method="post" id="login-nav">
                                                 <div class="form-group">
                                                     <label class="sr-only" for="exampleInputEmail2">Логин</label>
@@ -80,10 +80,8 @@
                                                     <button type="submit" class="btn btn-primary btn-block" name="do_login">Вхід</button>
                                                 </div>
                                                 <a href="logout.php" >Вийти</a><br/>
-
                                             </form>
                                         </div>
-                                    </div>
                                 </li>
                             </ul>
                         </li>

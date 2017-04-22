@@ -40,7 +40,24 @@ include_once "header.php"
                    </form>
                </div>
            </div>
-       </div></div>
+       </div>
+       <?php
+       if($_SESSION['errors'] != null){
+         if($_SESSION['errors'] == "Фото доданo)"){
+             echo '<div style="color: green;">' .  $_SESSION['errors'] . '</div><hr>';
+             $_SESSION['errors'] = null;
+         }
+         else{
+             echo '<div style="color: red;">' .  $_SESSION['errors'] . '</div><hr>';
+             $_SESSION['errors'] = null;
+         }
+       }
+       ?>
+
+
+
+
+   </div>
 
 <?php else :?>
 
