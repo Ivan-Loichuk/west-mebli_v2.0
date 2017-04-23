@@ -473,6 +473,87 @@ footer{
     background-color: #224863;
 }
 
+/* delete images on gallery */
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #FF0000;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+.close:hover { background: #00d9ff; }
+
+.nodelete {
+    width: 60px;
+    height: 25px;
+    background-color: #888888;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    top: 55px;
+    left: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.modalDialog button{
+    width: 60px;
+    height: 25px;
+    font-size: 14px;
+    background-color: #888888;
+    border: inherit;
+    color: white;
+    font-weight: bold;
+}
+.modalDialog button:hover{
+    color: #7a0000;
+}
+.nodelete:hover{
+    color: #7a0000;
+    text-decoration: inherit;
+}
 
 /*  input file*/
 .btn-file {

@@ -77,17 +77,28 @@
                                     <?php  $ident = $row['id']; ?>
                                 <?php if(isset($_SESSION['logged_user'])) : ?>
                                     <div class="col-md-3">
-                                        <form action="" method="post">
-                                            <input type="hidden" id="del" name="del" value= "<?php echo $ident ?>"/>
-                                            <button type="submit" id="delete" name="delete">Видалити</button>
-                                        </form>
+                                        <a href="#openModal"><img src="../img/button_cancel.png" style="width: 20px; height: 20px;"></a>
+
+                                        <div id="openModal" class="modalDialog">
+                                            <div>
+                                                <a href="#close" title="Закрыть" class="close">X</a>
+                                                <h2></h2>
+                                                <p>Ви спаравді хочете видалити фото?</p>
+                                                <form action="" method="post">
+                                                    <input type="hidden" id="del" name="del" value= "<?php echo $ident ?>"/>
+                                                    <button type="submit" href="#close" id="delete" name="delete">Так</button>
+
+                                                </form>
+                                                <a href="#close" title="nodelete" class="nodelete" >Hi</a>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 <?php else :?>
 
                                 <?php endif; ?>
                                 </div>
-                            <?php } }?>
+                            <?php } } ?>
                 </div> <!-- end tab-content -->
             </div>
         </div>  <!-- end row -->
