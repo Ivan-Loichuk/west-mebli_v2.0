@@ -10,7 +10,5 @@ if ( isset( $_POST["delete"] ) ) {
         }
     $result = R::getAll("DELETE  FROM photos WHERE id=" . $deleteItem);
     header('Location: gallery_view.php?type='.$_SESSION['type'].'#close');
-
 }
-
 ?>

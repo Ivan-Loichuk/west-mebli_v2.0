@@ -76,7 +76,7 @@
                                     </div>
                                     <?php  $ident = $row['id']; ?>
                                 <?php if(isset($_SESSION['logged_user'])) : ?>
-                                    <div class="col-md-3">
+                                 <div class="col-md-3">
                                         <a href="#openModal"><img src="../img/button_cancel.png" style="width: 20px; height: 20px;"></a>
 
                                         <div id="openModal" class="modalDialog">
@@ -92,7 +92,7 @@
                                                 <a href="#close" title="nodelete" class="nodelete" >Hi</a>
                                             </div>
                                         </div>
-                                    </div>
+                                  </div>
 
                                 <?php else :?>
 

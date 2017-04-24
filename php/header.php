@@ -12,9 +12,12 @@ else {
     if (isset($_COOKIE["lang"])) {
         $movies = simplexml_load_file('../xml/' . $_COOKIE["lang"] . '.xml');
     }
+    else{
+        $movies = simplexml_load_file('../xml/lang-ua.xml');
+    }
 }
 ?>
-<header>
+<header id="header">
     <div class="nav-menu">
         <div class="container">
             <div class="row">
@@ -26,17 +29,15 @@ else {
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.php"><img src="../img/Logo.png" alt="logotype" class="logotype"></a>
-
+                            <a class="navbar-brand" href="index.php"><img src="../img/west-mebli_logotype%20.png" alt="logotype" class="logotype"></a>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
-
                             <ul class="nav navbar-nav menu">
                               <?php  foreach ($movies->movie->characters->character->nav_menu as $nav_menu) {
 
                                 switch((string) $nav_menu['type']) { // Получение атрибутов элемента по индексу
                                 case '1':
-                                echo '<li role="presentation" class=""><a href="'. $links['Home'] . '">'.$nav_menu.'</a></li>';
+                                echo '<li role="presentation" class=""><a href="'.$links['Home'] . '">'.$nav_menu.'</a></li>';
                                 break;
                                 case '2':
                                 echo '<li role="presentation" class=""><a href="'. $links['gallery'] . '">'.$nav_menu.'</a></li>';
@@ -53,18 +54,50 @@ else {
                                 }
                                 }
                                 ?>
-<!--                                <li role="presentation" class=""><a href="--><?php //echo $links['Home'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
-<!--                                <li role="presentation"><a href="--><?php //echo $links['gallery'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
-<!--                                <li role="presentation"><a href="--><?php //echo $links['order'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
-<!--                                <li role="presentation"><a href="--><?php //echo $links['about'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
-<!--                                <li role="presentation"><a href="--><?php //echo $links['contact'];?><!--">--><?php //echo $nav_menu;?><!--</a></li>-->
-                            </ul>
+                             </ul>
                         </div>
                     </nav>
-                </div>
-            </div>
-
-        </div>
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+        </div> <!--end container -->
     </div>
 </header>
+<section>
+    <div class="nav-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-4 col-xs-6">
+                    <ul class="lang-ul-top">
+                        <li>
+                            <form class="language" action="index.php" method="post" >
+                                <input name="lang_ru" type="submit" value="Русский">
+                                <input name="lang_ua" type="submit" value="Українська">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-4  col-xs-6">
+                    <div class="location">
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i> Україна, м.Рівне</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4  col-xs-12">
+                    <div class="phone-number">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i> (067) 38 78 803
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i> (093) 25 85 861
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </div> <!-- end nav-info -->
+</section>
       

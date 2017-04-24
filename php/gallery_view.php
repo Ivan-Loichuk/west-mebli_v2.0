@@ -15,12 +15,11 @@ include_once "db.php";
 $links = array('Home' => 'index.php', 'gallery' => 'index.php#galeria', 'order' => 'index.php#order', 'about' => 'index.php#about_us', 'contact' => 'index.php#contact_us');
 $menu = "menu2";
 include_once "header.php"
-
 ?>
 
 <?php if(isset($_SESSION['logged_user'])) : ?>
 
-<!--    add images in gallery -->
+<!--    add images in gallery (form) -->
    <div class="container">
        <div class="row">
            <div class="col-md-12">
@@ -53,16 +52,10 @@ include_once "header.php"
          }
        }
        ?>
-
-
-
-
    </div>
 
 <?php else :?>
-
 <?php endif; ?>
-
 
 <?php include_once  "delete-image.php"; ?> <!--   include "delete" option -->
 <?php include_once  "view-gallery.php"; ?>

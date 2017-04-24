@@ -37,8 +37,6 @@ if(isset($_POST['Submit']))
                     $newW = 300;
                 }
 
-
-
                 $nowe = imagecreatetruecolor($newW, $newH);
                 $list = list($width, $height, $type, $attr) = getimagesize("../img/foto_original/".$image_name);
                 $obraz = imagecreatefromjpeg($location);

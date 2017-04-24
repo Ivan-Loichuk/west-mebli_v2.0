@@ -44,10 +44,10 @@
     </div>
     <div class="container-fluid">
         <div class="row bottom">
-            <div class="col-md-2 col-sm-6 col-xs-12">
-                <p>website@2017</p><hr>
+            <div class="col-md-2 col-sm-4 col-xs-3">
+                <p>website@2017</p>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-9">
                 <ul class="lang-ul">
                     <li class="list-gr">Language: </li>
                     <li><form class="language" action="index.php" method="post" >
@@ -55,13 +55,13 @@
                         <input name="lang_ua" type="submit" value="українська">
                         </form> </li>
                 </ul>
-                <hr>
+
             </div>
-            <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="col-md-4 col-sm-2 col-xs-12">
                 <div class="admin-btn">
                     <ul>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Admin</b> <span class="caret"></span></a>
                             <ul id="login-dp" class="dropdown-menu">
                                 <li>
                                         <div class="col-md-12">
