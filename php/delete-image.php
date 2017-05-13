@@ -1,4 +1,5 @@
 <?php
+//delete images from database and folder
 if ( isset( $_POST["delete"] ) ) {
 
     $deleteItem = htmlspecialchars(addslashes(strip_tags(trim($_REQUEST['del']))));

@@ -12,6 +12,7 @@
 <body>
 <?php
 include_once "db.php";
+//menu links in html
 $links = array('Home' => 'index.php', 'gallery' => 'index.php#galeria', 'order' => 'index.php#order', 'about' => 'index.php#about_us', 'contact' => 'index.php#contact_us');
 $menu = "menu2";
 include_once "header.php"

@@ -187,77 +187,61 @@ $_GET['type'] = "lang_ua";
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <div class="media">
-                    <div class="media-left">
-                        <img class="media-object" src="../img/contact-us.jpg" alt="...">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        1. Зателефонуйте нам.
-                        Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.
+    <div class="content-order">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail call-us"  onmouseover="thumbnail_mouse_over('call-us')" onmouseout="thumbnail_mouse_out('call-us')">
+                        <div class="caption" id="call-us">
+                            <h3>1. Зателефонуйте нам</h3>
+                            <p>Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="media">
-                    <div class="media-left">
-                        <img class="media-object" src="../img/SPOTKANIE.jpg" alt="...">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        2. Зустріч.
-                        У вигідний для вас час, завітаємо до вас, щоб зрозуміти ваші потреби, виконати попередні заміри і
-                        обговорити особливості що стосуються функціональності і дизайну нових меблів.
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail meet" onmouseover="thumbnail_mouse_over('meet')" onmouseout="thumbnail_mouse_out('meet')">
+                        <div class="caption" id="meet">
+                            <h3>2. Зустріч.</h3>
+                            <p>У вигідний для вас час, завітаємо до вас, щоб зрозуміти ваші потреби, виконати попередні заміри і обговорити особливості що стосуються функціональності і дизайну нових меблів.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="media">
-                    <div class="media-left">
-                        <img class="media-object" src="../img/PROJEKT.jpg" alt="...">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        3. Проект майбутніх меблів.
-                        Наш досвідчений дизайнер виконає для вас індивідуальний проект. Більше того, ви отримаєте повну інформацію що до цін. Якщо ви вже маєте проект - пришліть його нам - ми швидко представим вам вартість його реалізації.
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail project" onmouseover="thumbnail_mouse_over('project')" onmouseout="thumbnail_mouse_out('project')"">
+                        <div class="caption" id="project">
+                            <h3>3. Проект майбутніх меблів.</h3>
+                            <p>Наш досвідчений дизайнер виконає для вас індивідуальний проект. Більше того, ви отримаєте повну інформацію що до цін. Якщо ви вже маєте проект - пришліть його нам - ми швидко представим вам вартість його реалізації.</p>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end col -->
-            <div class="col-xs-12 col-md-6">
-                <div class="media">
-                    <div class="media-left">
-                        <img class="media-object" src="../img/UMOWA.jpg" alt="...">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        4. Договір.
-                        По узгодженню проекту ми підготуємо договір, у якому будуть описані особливості вспівпраці,
-                        перелік робіт, час реалізації а також спосіб оплати.
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail umowa" onmouseover="thumbnail_mouse_over('agreement')" onmouseout="thumbnail_mouse_out('agreement')">
+                        <div class="caption" id="agreement">
+                            <h3>4. Договір.</h3>
+                            <p>По узгодженню проекту ми підготуємо договір, у якому будуть описані особливості вспівпраці, перелік робіт, час реалізації а також спосіб оплати.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="media">
-                    <div class="media-left">
-                        <img class="media-object" src="../img/REALIZACJA.jpg" alt="...">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        5. Реалізація проекту.
-                        Після підписання договору і отримання авансу, розпочнемо виготовлення ваших меблів.
-                        Час реалізації проекту залежить від ступіня важкості проекту, вибраних матеріалів.
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail do-project" onmouseover="thumbnail_mouse_over('do-project')" onmouseout="thumbnail_mouse_out('do-project')">
+                        <div class="caption" id="do-project">
+                            <h3>5. Реалізація проекту.</h3>
+                            <p>Після підписання договору і отримання авансу, розпочнемо виготовлення ваших меблів. Час реалізації проекту залежить від ступіня важкості проекту, вибраних матеріалів.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="media">
-                    <div class="media-left">
-                        <img class="media-object" src="../img/TRANSPORT.jpg" alt="...">
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">1. Зателефонуйте нам.</h4>
-                        6. Доставка і встановлення.
-                        Встановлення нових меблів виконаємо швидко й професійно - звичайно в зручний для вас час.
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail transport" onmouseover="thumbnail_mouse_over('delivery')" onmouseout="thumbnail_mouse_out('delivery')">
+                        <div class="caption" id="delivery">
+                            <h3>6. Доставка і встановлення.</h3>
+                            <p>Встановлення нових меблів виконаємо швидко й професійно - звичайно в зручний для вас час.</p>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end col -->
-        </div>  <!-- end row -->
-    </div> <!-- end container -->
+
+            </div>  <!-- end row -->
+        </div> <!-- end container -->
+    </div><!-- end content-order-->
 </section>
 
 <section class="about_us" id="about_us">
@@ -267,18 +251,50 @@ $_GET['type'] = "lang_ua";
                 <div class="about-us">
                     <h2>Про нас</h2>
                     <div class="container"><hr></div>
-                    <p>Together fill over creature his so created make creature every grass stars, him. Face their you herb appear first heaven whales won&#39;t he appear the seasons be living wherein whales itself saying i you&#39;re stars, dominion fruitful, sixth second bring waters.</p>
+                    <h2>Замовлення меблів у Рівному</h2>
 
-                    <p>Our forth itself be whose. Fifth void first bearing the cattle created, void replenish so. To waters moving kind under.</p>
+                    <h3> Виготовлення корпусних меблів на замовлення.
+                        Можна зробити індивідуальне замовлення на будь-які корпусні меблі: <span class="underline"> сучасні кухні,
+                        кухні з вмонтованою технікою, класичні кухні, шафи-купе, спальні, прихожі, офісні меблі </span>та ін.
+                        Індивідуальний підхід до кожного клієнта. Можливість підібрати власний дизайн.<span class="biggest_word"> Встановлення безкоштовно!!</span><br/><br/>
+                        Ми виконуємо замовлення різної складності – від полички до масштабних об’єктів.
+                        Компанія <span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span> пропонує професійні послуги дизайну меблів на замовлення та виготовлення меблів на замовлення у Рівному для Вашого дому та офісу.
+                        Ми пропонуємо меблі на замовлення як по індивідуальному дизайну, так і меблі серійного виробництва на Ваш смак. Ми можемо по бажанню замовника вносити зміни і розробляти дизайн кухні персонально під Ваші індивідуальні потреби.
 
-                    <p>All be deep abundantly beginning us he unto. Deep grass it light living it man, his may light spirit face good for to fruit forth you hath, itself. Light they&#39;re face said it subdue you&#39;ll fruit. Fish female. Own.</p>
 
-                    <p>Together fill over creature his so created make creature every grass stars, him. Face their you herb appear first heaven whales won&#39;t he appear the seasons be living wherein whales itself saying i you&#39;re stars, dominion fruitful, sixth second bring waters.</p>
+                        Меблі будуть слугувати довгі роки і радуватимуть своєю якістю, неповторністю та доступними цінами. Ми стараємось для Вас!<br/><br/>
 
-                    <p>Our forth itself be whose. Fifth void first bearing the cattle created, void replenish so. To waters moving kind under.</p>
 
-                    <p>All be deep abundantly beginning us he unto. Deep grass it light living it man, his may light spirit face good for to fruit forth you hath, itself. Light they&#39;re face said it subdue you&#39;ll fruit. Fish female. Own.</p>
-                </div>
+                        <a href="html/szafy_kupe.html" title="Шафи купе на замовлення Рівне West mebli"><h2>Шафи-купе Рівне</h2></a>
+
+                        Шафи купе - це система, яка дозволяє грамотно організувати і використати простір у квартирі чи офісі та одночасно являється елементом інтер’єру та дизайну помешкання.
+
+                        Шафа-купе проектується та виготовляється за індивідуальним проектом, з врахуванням особливостей Вашого приміщення.
+                        Внутрішній простір шафи купе проектується під Ваші потреби, і може враховувати будь-які конструктивні побажання.
+                        Дизайн шафи купе ексклюзивний!<br/><br/>
+
+                        <a href="html/bed_room.html" title="Спальні на замовлення в Рівному West mebli"><h2>Спальні Рівне</h2></a>
+
+                        Спальні на замовлення - ідеальний спосіб роздобути стильне, затишне і практичне гніздечко для себе і своєї другої половинки. Вибір меблів для спальні – це серйозне завдання, яке стоїть перед власником квартири.
+                        Від якості меблів для спалень залежить якість вашого сну і відпочинку. Всі предмети інтер'єру спальної кімнати мають бути практичними і зручними, при цьому мати індивідуальний дизайн.
+                        Крім того, ми пропонуємо як спальні гарнітури в комплекті, так і модульні системи, перевагою яких є можливість підібрати окремі елементи для Вашої спальні.<br/><br/>
+
+                        <a href="html/office_furniture.html" title="Меблі для офісу на замовлення Рівне West mebli"><h2>Офісні меблі Рівне </h2></a>
+
+                        Ми пропонуємо якісні меблі для офісу, індивідуальний і ексклюзивний дизайн офісних меблів,
+                        виготовлення офісних меблів та проектування і встановлення меблів для офісу.
+                        Каталог офісних меблів нашої компанії Ви можете переглянути у розділі офісні меблі на замовлення.<br/><br/>
+
+
+                        <a href="html/kitchen.html" title="Меблі для кухні на замовлення Рівне West"><h2>Кухні Рівне</h2></a>
+
+                        Всі кухні-west на замовлення виготовляються по індивідуальному проекті, з урахуванням всіх вимог і побажань замовника, розміри меблів, кольори, фурнітура й комплектація.
+                        Висока якість наших кухонних меблів досягається завдяки використанню сучасного встаткування й передових технологій.
+                        Кухні на замовлення в Рівному від <span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span> – це Ваше правильне і обдумане рішення.
+                        Ви зможете вибрати той варіант кухні, що буде повністю відповідати вашій кухні мрії.
+                        Саме кухня – місце творчості, в якій Ви неодмінно будете робити свої кулінарні подвиги.
+
+                    </h3></div>
             </div>
         </div>
     </div>

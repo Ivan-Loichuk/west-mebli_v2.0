@@ -1,5 +1,4 @@
 body{
-
 }
 ul {
     list-style: none;
@@ -10,7 +9,9 @@ hr{
   color: #E21312;
   background-color: #E21312;
   height: 1px;
+    border-top: inherit;
 }
+
 header{
 	background-color: #262628;
 
@@ -65,11 +66,9 @@ header{
   width: 100%;
   transition: 0.5s;
    opacity: 1;
-   z-index: 1000;
+   z-index: 3;
 }
-.headhesive .nav > li > a{
- 
-}
+
 .navbar-inverse .navbar-nav > li > a{
     color: #fff;
     font-size: 14px;
@@ -109,7 +108,6 @@ header{
   height: auto;
   transition: 0.5s;
 }
-
 .nav-info{
     height: auto;
     width: 100%;
@@ -172,6 +170,9 @@ header{
     padding-bottom: 60px;
 }
 
+.carousel-indicators{
+    z-index: 2;
+}
 /*gallery*/
 
 @import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
@@ -225,8 +226,8 @@ article a:hover{
 }
 .caption-gallery h2{
     color: #232325;
-    font-size: 24px;
-    font-weight: 600;
+    margin-top: 0;
+   padding-top: 20px;
 }
 
 .img-responsive,
@@ -261,6 +262,95 @@ article a:hover{
 
 /* Order*/
 
+
+.order{
+    background-image: url("../img/pattern2.png");
+    background-position: center;
+}
+
+.info-order h2{
+    color: #fff;
+}
+.content-order{
+    padding-top: 30px;
+}
+.content-order .thumbnail{
+    min-height: 200px;
+}
+
+.content-order img{
+    max-width: 100%;
+}
+.caption{
+    background-color: rgba(255,255,255,0.55 );
+    min-height: 200px;
+}
+.call-us {
+    background-image: url("../img/PROJEKT.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: inherit;
+}
+.thumbnail{
+    padding: 0 0;
+}
+.thumbnail:hover{
+    background-color: rgba(200,200,200,0.7);
+}
+.meet{
+    background-image: url("../img/SPOTKANIE.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.project{
+    background-image: url("../img/PROJEKT.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.umowa{
+    background-image: url("../img/UMOWA.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.do-project{
+    background-image: url("../img/REALIZACJA.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.transport{
+    background-image: url("../img/TRANSPORT.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.caption h3{
+    font-size: 20px;
+    color: #2B4A8F;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.caption p{
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.thumbnail-img{
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    float: left;
+}
+
 .media-object{
   max-height: 20%;
 }
@@ -274,6 +364,15 @@ article a:hover{
 
 .about_us h2{
   text-align: center;
+}
+.about_us h3{
+    font-size: 18px;
+}
+.about-us h1{
+
+}
+.about-us a{
+   font-size: 22px;
 }
 
 
@@ -401,6 +500,9 @@ footer{
    border: inherit;
     color: red;
 }
+.language input:focus{
+
+}
 .lang-ul{
     display: -webkit-box;
 }
@@ -422,7 +524,13 @@ footer{
 
 
 /* RWD */
+@media (min-width: 1920px) {
 
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        max-height: 900px;
+    }
+}
 @media (max-width: 991px){
     header {
         height: 70px;
@@ -480,7 +588,6 @@ footer{
 
 }
 
-
 /*///////carousel//////////*/
 .carousel-caption{
     padding-bottom: 40px;
@@ -490,14 +597,7 @@ footer{
 
 }
 
-
-/*   Contact.html      */
-
-.contact_us{
-  margin-top: 40px;
-  background-color: #fff;
-  padding-top: 15px;
-}
+/*   Contact us     */
 
 .caption-contact h2{
   text-align: center;
@@ -550,7 +650,7 @@ footer{
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    /* height: auto; */
+    height: auto;
 }
 
 

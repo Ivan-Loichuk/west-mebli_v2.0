@@ -100,7 +100,7 @@
                                 </div>
                             <?php } } ?>
                 </div> <!-- end tab-content -->
-            </div>
+            </div><!-- end col -->>
         </div>  <!-- end row -->
     </div><!-- container-->
 </section>
