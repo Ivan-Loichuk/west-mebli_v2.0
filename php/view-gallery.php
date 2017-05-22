@@ -67,9 +67,6 @@
 
                                 <div class="col-xs-12 col-sm-4">
                                     <div class="col-md-12">
-<!--                                        <a class="" href="--><?php //echo $row['location']?><!--" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">-->
-<!--                                            <img class="" src="--><?php //echo $row['location_mini'] ?><!--" name="--><?php //echo $row['name_photo'] ?><!--" alt="--><?php //echo $row['alt'] ?><!--"/></a>-->
-
                                         <a class="" href="<?php echo $row['location']?>" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                             <div style=" background-image: url('<?php echo $row['location_mini']?>'); background-repeat: no-repeat; background-size: cover; background-position: center; height:150px; width: 100%;"></div>
                                         </a>
@@ -77,21 +74,28 @@
                                     <?php  $ident = $row['id']; ?>
                                 <?php if(isset($_SESSION['logged_user'])) : ?>
                                  <div class="col-md-3">
-                                        <a href="#openModal"><img src="../img/button_cancel.png" style="width: 20px; height: 20px;"></a>
+                                     <!-- Trigger the modal with a button -->
+                                     <a href="#openModal" data-target="#myModal" data-toggle="modal"><img src="../img/button_cancel.png" style="width: 20px; height: 20px;"></a>
+                                     <!-- Modal -->
+                                     <div id="myModal" class="modal fade" role="dialog">
+                                         <div class="modal-dialog">
+                                             <!-- Modal content-->
+                                             <div class="modal-content">
+                                                 <div class="modal-body">
+                                                     <p>Ви справді хочете видалити  фото?</p>
+                                                 </div>
+                                                 <div class="modal-footer">
+                                                     <form method="post">
+                                                         <input type="hidden" id="del" name="del" value= "<?php echo $ident ?>"/>
+                                                         <button type="submit" name="delete" class="btn btn-primary">Так</button>
+                                                         <button type="button" class="btn btn-default" data-dismiss="modal">Ні</button>
+                                                     </form>
 
-                                        <div id="openModal" class="modalDialog">
-                                            <div>
-                                                <a href="#close" title="Закрыть" class="close">X</a>
-                                                <h2></h2>
-                                                <p>Ви спаравді хочете видалити фото?</p>
-                                                <form action="" method="post">
-                                                    <input type="hidden" id="del" name="del" value= "<?php echo $ident ?>"/>
-                                                    <button type="submit" href="#close" id="delete" name="delete">Так</button>
+                                                 </div>
+                                             </div>
 
-                                                </form>
-                                                <a href="#close" title="nodelete" class="nodelete" >Hi</a>
-                                            </div>
-                                        </div>
+                                         </div>
+                                     </div>
                                   </div>
 
                                 <?php else :?>
@@ -100,7 +104,7 @@
                                 </div>
                             <?php } } ?>
                 </div> <!-- end tab-content -->
-            </div><!-- end col -->>
+            </div><!-- end col -->
         </div>  <!-- end row -->
     </div><!-- container-->
 </section>

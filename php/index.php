@@ -1,6 +1,6 @@
 <?php
- $data = $_POST;
-$_GET['type'] = "lang_ua";
+     $data = $_POST;
+     $_GET['type'] = "lang_ua";
 ?>
 <!doctype html>
 <html lang="en">

@@ -1,4 +1,4 @@
-//NAV-MENU
+//NAV-MENU (Headhesive)
 var options ={
 	offset: 200
 }
@@ -23,7 +23,7 @@ $(document).ready(function() {
  
     // navigation on click
 	$("#menu").on("click","a", function (event) {
-		//отменяем стандартную обработку нажатия по ссылке
+		//We cancel the standard processing of the goods by reference
 		event.preventDefault();
 
 		//забираем идентификатор бока с атрибута href
@@ -72,7 +72,6 @@ var thumbnail_mouse_over = function (atribute_name) {
 var thumbnail_mouse_out = function (atribute_name) {
     document.getElementById(atribute_name).style.backgroundColor = "rgba(255,255,255,0.5)";
 };
-
 
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
