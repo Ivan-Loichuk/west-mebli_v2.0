@@ -1,4 +1,6 @@
 <?php
+//add images to database and folder
+
 require "db.php";
 $data = $_POST;
 if(isset($_POST['Submit']))

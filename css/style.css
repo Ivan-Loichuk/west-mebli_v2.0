@@ -1,4 +1,5 @@
 body{
+    font-family: "Open Sans";
 }
 ul {
     list-style: none;
@@ -14,7 +15,6 @@ hr{
 
 header{
 	background-color: #262628;
-
 }
 .nav-menu{
 	background-color: #333;
@@ -221,13 +221,19 @@ article a:hover{
  */.ekko-lightbox-container{position:relative}.ekko-lightbox-nav-overlay{position:absolute;top:0;left:0;z-index:100;width:100%;height:100%}.ekko-lightbox-nav-overlay a{z-index:100;display:block;width:49%;height:100%;padding-top:45%;font-size:30px;color:#fff;text-shadow:2px 2px 4px #000;opacity:0;filter:dropshadow(color=#000000,offx=2,offy=2);-webkit-transition:opacity .5s;-moz-transition:opacity .5s;-o-transition:opacity .5s;transition:opacity .5s}.ekko-lightbox-nav-overlay a:empty{width:49%}.ekko-lightbox a:hover{text-decoration:none;opacity:1}.ekko-lightbox .glyphicon-chevron-left{left:0;float:left;padding-left:15px;text-align:left}.ekko-lightbox .glyphicon-chevron-right{right:0;float:right;padding-right:15px;text-align:right}.ekko-lightbox .modal-footer{text-align:left}
 
 
-.caption-gallery{
+.caption-gallery , .caption-order, .caption-contact, .about-caption{
   text-align: center;
 }
+.caption-order h2{
+    color: #fff;
+    padding-top: 20px;
+    margin-top: 0;
+}
+
 .caption-gallery h2{
     color: #232325;
     margin-top: 0;
-   padding-top: 20px;
+    padding-top: 20px;
 }
 
 .img-responsive,
@@ -362,17 +368,54 @@ article a:hover{
 
 /*about us */
 
-.about_us h2{
+.about-us .title{
   text-align: center;
 }
-.about_us h3{
-    font-size: 18px;
-}
-.about-us h1{
 
+.block .title a{
+   font-size: 20px;
+   text-decoration: inherit;
+    text-underline: none;
 }
-.about-us a{
-   font-size: 22px;
+.block .title{
+    text-align: inherit;
+}
+.block-content p{
+    font-size: 14px;
+    margin: 0 0 0 15px;
+}
+.block .image {
+     width:  31.3%;;
+     float: left;
+     padding: 20px 0px 0px 10px;
+ }
+.block .image img{
+
+    border: 1px solid #2B4A8F;
+}
+.block .image-contact{
+    width: 33.3%;
+    float: left;
+    padding: 0px 0px 0px 10px;
+}
+.block .title{
+    width: 100%;
+    float: left;
+    padding: 20px 5px 10px 15px;
+}
+.block .block-content{
+    width: 66.6%;
+    float: left;
+    min-height: 200px;
+}
+.block-content .biggest_word{
+    font-weight: 600;
+}
+.block-content .color_word{
+    color: #6BB343;
+}
+.block{
+    float: left;
 }
 
 
@@ -410,7 +453,7 @@ footer{
   border-radius: 50%;
   position: relative;
   top: 10px; 
-  background-color: #E21312;
+  background-color: #FF0000;
   width: 40px;
   height: 40px;
 }
@@ -447,7 +490,7 @@ footer{
     font-size: 14px;
 }
 .right-footer ul li a:hover{
-  color: #E21312;
+  color: #FF0000;
 }
 .bottom {
     height: auto;
@@ -498,7 +541,7 @@ footer{
 }
 .language input:hover{
    border: inherit;
-    color: #E21312;
+    color: red;
 }
 .language input:focus{
 
@@ -517,7 +560,7 @@ footer{
     text-decoration: none;
 }
 .admin-btn a:hover{
-    color: #E21312;
+    color: red;
     text-decoration: none;
 }
 
@@ -631,7 +674,7 @@ footer{
   font-weight: 500;
 }
 .contact-form button:hover{
-  background-color: #E21312;
+  background-color: #FF0000;
   border: none;
   color: #fff;
 }
@@ -687,8 +730,84 @@ footer{
 
 /* delete images on gallery */
 
-.modal-dialog{
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
     width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #FF0000;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+.close:hover { background: #00d9ff; }
+
+.nodelete {
+    width: 60px;
+    height: 25px;
+    background-color: #888888;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    top: 55px;
+    left: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.modalDialog button{
+    width: 60px;
+    height: 25px;
+    font-size: 14px;
+    background-color: #888888;
+    border: inherit;
+    color: white;
+    font-weight: bold;
+}
+.modalDialog button:hover{
+    color: #7a0000;
+}
+.nodelete:hover{
+    color: #7a0000;
+    text-decoration: inherit;
 }
 
 /*  input file*/

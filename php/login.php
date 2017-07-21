@@ -3,11 +3,13 @@
 require "db.php";
 $data = $_POST;
 
+//  veryfication and login user(admin)
+
 if( isset($data['do_login'])){
     $errors = array();
     $user = R::findOne('users', 'login = ?', array($data['log_in']));
     if($user){
-        if(password_verify($data['password'], $user->password)){
+        if(md5($data['password'])== $user->password){
             echo '<br><div style="color: green;">Ви увійшли!!</div><hr>';
             session_start();
             $_SESSION['kategoria'];

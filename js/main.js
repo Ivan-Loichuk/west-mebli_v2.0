@@ -1,4 +1,4 @@
-//NAV-MENU (Headhesive)
+//NAV-MENU
 var options ={
 	offset: 200
 }
@@ -26,13 +26,13 @@ $(document).ready(function() {
 		//We cancel the standard processing of the goods by reference
 		event.preventDefault();
 
-		//забираем идентификатор бока с атрибута href
+		//Take the side identifier from the href attribute
 		var id  = $(this).attr('href'),
 
-		//узнаем высоту от начала страницы до блока на который ссылается якорь
+		//We find out the height of the top-up unit which is referred to anchor
 			top = $(id).offset().top - 50;
 
-		//анимируем переход на расстояние - top за 1500 мс
+		//Animate the transition to the distance - top for 1500 ms
 		$('body, html').animate({scrollTop: top}, 600);
 	});
 
@@ -59,19 +59,16 @@ $(document).ready(function() {
                 $('#carousel-text').html($('#slide-content-'+id).html());
         });
 
-
-// Order style
-
-
-
 });
 
+// section <how to order>, mouse event
 var thumbnail_mouse_over = function (atribute_name) {
         document.getElementById(atribute_name).style.backgroundColor = "#fff";
 };
 var thumbnail_mouse_out = function (atribute_name) {
     document.getElementById(atribute_name).style.backgroundColor = "rgba(255,255,255,0.5)";
 };
+
 
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();

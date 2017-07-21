@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['lang_ru'])) {
     $movies = simplexml_load_file('../xml/lang-ru.xml');
     setcookie("lang", "lang-ru", time()+3600*24);

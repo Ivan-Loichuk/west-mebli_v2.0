@@ -59,7 +59,7 @@ include_once "header.php"
 <?php endif; ?>
 
 <?php include_once  "delete-image.php"; ?> <!--   include "delete" option -->
-<?php include_once  "view-gallery.php"; ?>
+<?php include_once "select-gallery.php"; ?>
 
 <?php  include "footer.php"?>
 <?php  include "js_links.php"?>
