@@ -113,8 +113,9 @@ header{
     width: 100%;
     background-color: #DCE1E0;
 }
-.phone-number, .location {
+.phone-number ul li{
     float: right;
+    padding: 0px 10px;
 }
 .lang-ul-top, .location{
     float: left;
@@ -367,46 +368,52 @@ article a:hover{
 }
 
 /*about us */
-
-.about-us .title{
-  text-align: center;
+.about_us{
+    padding-bottom: 20px;
+}
+.about_us-content{
+    padding: 20px 10px;
 }
 
-.block .title a{
+.block-content .title a{
    font-size: 20px;
    text-decoration: inherit;
     text-underline: none;
 }
-.block .title{
+.block-content .title{
     text-align: inherit;
+    width: 100%;
+    float: left;
 }
 .block-content p{
     font-size: 14px;
-    margin: 0 0 0 15px;
 }
-.block .image {
-     width:  31.3%;;
-     float: left;
-     padding: 20px 0px 0px 10px;
- }
-.block .image img{
-
-    border: 1px solid #2B4A8F;
-}
-.block .image-contact{
-    width: 33.3%;
+.about_us-content .image {
     float: left;
+ }
+.image-contact img{
+    width: 100%;
+}
+.about_us-content .image img{
+    width: 100%;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about_us-content .image img:hover{
+
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.about_us-content .image-contact{
     padding: 0px 0px 0px 10px;
 }
-.block .title{
-    width: 100%;
-    float: left;
-    padding: 20px 5px 10px 15px;
+.about_us-content .right{
+    min-height: 285px;
+    padding-top: 20px;
 }
-.block .block-content{
-    width: 66.6%;
-    float: left;
+
+.block-content{
     min-height: 200px;
+    float: left;
 }
 .block-content .biggest_word{
     font-weight: 600;
@@ -414,10 +421,6 @@ article a:hover{
 .block-content .color_word{
     color: #6BB343;
 }
-.block{
-    float: left;
-}
-
 
 /*  footer */
 
@@ -428,9 +431,6 @@ footer{
 
 .left-footer, .center-footer, .right-footer{
   color: #fff;
-}
-.left-footer{
-  max-width: 300px;
 }
 .left-footer h2, .center-footer h2, .right-footer h2{
     padding: 20px 0;
@@ -601,10 +601,18 @@ footer{
         width: 70%;
     }
 }
-    @media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .about_us-content .right{
+        min-height: 100px;
+    }
+}
+@media (max-width: 768px) {
 
     .navbar-nav {
 	    float: inherit;
+    }
+    footer{
+        text-align: center;
     }
 
     .navbar-nav > li > a {
@@ -612,35 +620,50 @@ footer{
 		padding-bottom: 10px;
 		line-height: 20px;
      }
-.headhesive--stick .nav > li > a {
-  padding: 10px 15px;
+    .headhesive--stick .nav > li > a {
+      padding: 10px 15px;
 
-}
+    }
 
-.left-footer{
-    margin-left: 20px;
-}
-.center-footer{
-    margin-left: 20px;
-}
-.right-footer{
-  margin-left: 20px;
-}
-#login-dp .bottom{
-    border-top:0 none;
+    .left-footer{
+        margin-left: 20px;
+    }
+    .center-footer{
+        margin-left: 20px;
+    }
+    .right-footer{
+      margin-left: 20px;
+    }
+    #login-dp .bottom{
+        border-top:0 none;
 
-}
+    }
 
-/*///////carousel//////////*/
-.carousel-caption{
-    padding-bottom: 40px;
-    padding-top: 0px;
-}
-/*///////////end carousel///////////////*/
+    /*///////carousel//////////*/
+    .carousel-caption{
+        padding-bottom: 40px;
+        padding-top: 0px;
+    }
+    .carousel-caption h3{
+            font-size: 16px;
+        }
+    .carousel-caption p{
+        font-size: 13px;
+    }
+    /*///////////end carousel///////////////*/
+
+    /*///////nav-info/////////*/
+    .language, .location{
+        width: 50%;
+    }
+
 
 }
 
 /*   Contact us     */
+.contact_us{
+    //background-color: #3F51B5;
+}
 
 .caption-contact h2{
   text-align: center;
@@ -656,10 +679,14 @@ footer{
   width: 100%;
   height: 50px;
   border: 1px solid #A5B3B1;
+    box-shadow: 0 5px 10px 0 rgba(45,45,45,0.2);
 }
 .contact-form textarea{
   width: 100%;
   height: 120px;
+    border: 1px solid #A5B3B1;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px 0 rgba(45,45,45,0.2);
 }
 .contact-form button{
   width: 45%;

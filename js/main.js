@@ -59,6 +59,24 @@ $(document).ready(function() {
                 $('#carousel-text').html($('#slide-content-'+id).html());
         });
 
+/*
+    var bool = false;
+    $(window).resize(function() {
+
+        if(window.innerWidth < 768){
+            $('.image').css('posision', 'absolute');
+            $('.image').css('left','-9999px');
+            bool = true;
+        }
+        else{
+            if(bool){
+                $('.image').css('posision', 'relative');
+                $('.image').css('left','0px');
+            }
+        }
+
+    });
+*/
 });
 
 // section <how to order>, mouse event

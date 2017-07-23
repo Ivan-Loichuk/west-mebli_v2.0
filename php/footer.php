@@ -2,7 +2,7 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs- col-sm-4 col-md-4">
+            <div class="col-xs-12 col-sm-4 col-md-4">
                 <div class="left-footer">
                     <h2>Про нас</h2>
                     <p>Together fill over creature his so created make creature every grass stars, him. Face their you herb appear first heaven whales won</p>
@@ -44,10 +44,10 @@
     </div>
     <div class="container-fluid">
         <div class="row bottom">
-            <div class="col-md-2 col-sm-4 col-xs-3">
+            <div class="col-md-2 col-sm-4 col-xs-12">
                 <p>website@2017</p>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-9">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <ul class="lang-ul">
                     <li class="list-gr">Language: </li>
                     <li><form class="language" action="index.php" method="post" >

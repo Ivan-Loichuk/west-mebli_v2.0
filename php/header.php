@@ -66,35 +66,31 @@ else {
     <div class="nav-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-4 col-xs-6">
+                <div class="language col-md-6 col-sm-4 col-xs-6">
                     <ul class="lang-ul-top">
                         <li>
-                            <form class="language" action="index.php" method="post" >
+                            <form  action="index.php" method="post" >
                                 <input name="lang_ru" type="submit" value="Русский">
                                 <input name="lang_ua" type="submit" value="Українська">
                             </form>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-sm-4  col-xs-6">
-                    <div class="location">
-                        <ul>
-                            <li><i class="fa fa-map-marker"></i> Україна, м.Рівне</li>
-                            <li></li>
-                        </ul>
-                    </div>
+                <div class="location col-md-3 col-sm-4  col-xs-6">
+                    <ul>
+                        <li><i class="fa fa-map-marker"></i> Україна, м.Рівне</li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-sm-4  col-xs-12">
-                    <div class="phone-number">
-                        <ul>
-                            <li>
-                                <i class="fa fa-phone"></i> (067) 38 78 803
-                            </li>
-                            <li>
-                                <i class="fa fa-phone"></i> (093) 25 85 861
-                            </li>
-                        </ul>
-                    </div>
+                <div class="phone-number col-md-3 col-sm-4  col-xs-12">
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone"></i> (067) 38 78 803
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i> (093) 25 85 861
+                        </li>
+                    </ul>
+
                 </div>
             </div> <!-- end row -->
         </div> <!-- end container -->
