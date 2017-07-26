@@ -12,8 +12,6 @@ if( isset($data['do_login'])){
         if(md5($data['password'])== $user->password){
             echo '<br><div style="color: green;">Ви увійшли!!</div><hr>';
             session_start();
-            $_SESSION['kategoria'];
-            $_SESSION['type'];
             $_SESSION['errors'] = null;
 
             $_SESSION['logged_user']=$user;

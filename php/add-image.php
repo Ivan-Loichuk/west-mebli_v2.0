@@ -52,7 +52,7 @@ if(isset($_POST['Submit']))
                 $photos->location_mini = $location_mini;
                 $photos->name_photo = $data['name'];
                 $photos->alt = $data['alt'];
-                $photos->id_kategorii = $_SESSION['kategoria'];
+                $photos->id_kategorii = $data['img_category'];
 
                 R::store($photos);
 
@@ -72,5 +72,5 @@ if(isset($_POST['Submit']))
         $_SESSION['errors'] = $errors;
     }
 }
-header('Location: gallery_view.php?type='.$_SESSION['type']);
+header('Location: gallery_view.php');
 ?>

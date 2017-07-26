@@ -77,6 +77,7 @@ $(document).ready(function() {
 
     });
 */
+
 });
 
 // section <how to order>, mouse event
@@ -93,6 +94,43 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(this).ekkoLightbox();
 });
 
+function getContent(id){
+    $('#output').html('<img src="LoaderIcon.gif" />');
+    $.ajax({
+        url: "get_page.php",
+        data:'id='+id,
+        type: "POST",
+        success:function(data){
+            var tab_content = document.getElementById('tab-content');
+            if(data == 0){
+                tab_content.innerHTML = "Галерея пуста!!";
+                console.log(data);
+            }
+            else {
+                tab_content.innerHTML = data;
+            }
+
+        }
+    });
+}
+
+function delete_request(id){
+    $.ajax({
+        url: "delete-image.php",
+        data: 'id='+id,
+        type: "POST",
+        success: function (data) {
+            if(data == 0){
+                alert('Error SQL');
+            }
+            else{
+                $('#img_'+data).remove();
+                $('#del_'+data).remove();
+                $('#openModal_'+data).remove();
+            }
+        }
+    });
+}
 
 
 

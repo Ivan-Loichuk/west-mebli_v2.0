@@ -33,6 +33,16 @@ include_once "header.php"
                                      </span></td>
                                <td> <input name="name" type="text" class="ed" id="brnu" placeholder="Назва картинки"/></td>
                                <td> <input name="alt" type="text" class="ed" id="brnu" placeholder="Альтернативний опис"/></td>
+                               <td> <select id="img_category" name="img_category">
+                                       <option value="1">Шафи-купе</option>
+                                       <option value="2">Кухні</option>
+                                       <option value="3">Спальні</option>
+                                       <option value="4">Дитячі</option>
+                                       <option value="5">Стінки</option>
+                                       <option value="6">Офісні меблі</option>
+                                       <option value="7">Матраси</option>
+                                    </select>
+                               </td>
                                <td> <input type="submit" name="Submit" value="Додати" id="submit_add_foto"/></td>
                            </tr>
                        </table>
@@ -57,11 +67,14 @@ include_once "header.php"
 
 <?php else :?>
 <?php endif; ?>
-
-<?php include_once  "delete-image.php"; ?> <!--   include "delete" option -->
-<?php include_once "select-gallery.php"; ?>
-
-<?php  include "footer.php"?>
+<?php include_once "../php/select-gallery.php"; ?>
 <?php  include "js_links.php"?>
+<script>
+    $(document).ready(function() {
+        getContent('1');
+    });
+</script>
+<?php  include "footer.php"?>
+
 </body>
 </html>
