@@ -5,11 +5,12 @@
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <div class="left-footer">
                     <h2>Про нас</h2>
-                    <p>Together fill over creature his so created make creature every grass stars, him. Face their you herb appear first heaven whales won</p>
+                    <p>Виготовлення корпусних меблів на замовлення в місті Рівному.
+                        <a href="#" title="West-mebli корпусні меблі на замовлення"><span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span></a> пропонує професійні послуги дизайну меблів на замовлення та виготовлення меблів на замовлення у Рівному для Вашого дому та офісу.</p>
 
-                    <div><a href="#"><i class="fa fa-vk"></i></a>
-                        <a href="#"><i class="fa fa-odnoklassniki"></i></a>
-                        <a href="#"><i class="fa fa-facebook-f"></i> </a></div>
+                    <div><a href="https://vk.com/club93836477" title="west mebli в вконтакте замовлення корпусних меблів"><i class="fa fa-vk"></i></a>
+                        <a href="https://ok.ru/group/54954728423433" title="west mebli в однокласниках виготовлення курпусних меблів"><i class="fa fa-odnoklassniki"></i></a>
+                        <a href="https://www.facebook.com/groups/1790465037903699" title="west mebli на фейсбуку корпусні меблі на замовлення рівне"><i class="fa fa-facebook-f"></i> </a></div>
                     </ul>
                 </div>
             </div>
@@ -30,12 +31,12 @@
                 <div class="right-footer">
                     <h2>Наша продукція</h2>
                     <ul>
-                        <li><a href="#">Кухні на замовлення</a></li>
-                        <li><a href="#">Шафи-купе на замовлення</a></li>
-                        <li><a href="#">Стінки на замовлення</a></li>
-                        <li><a href="#">Дитячі меблі на замовлення</a></li>
-                        <li><a href="#">Офісні меблі на замовлення</a></li>
-                        <li><a href="#">Спальні на замовлення</a></li>
+                        <li><a href="gallery_view.php?type=kitchen-furniture" title="Виготовлення корпусних меблів для кухні">Кухні на замовлення</a></li>
+                        <li><a href="gallery_view.php" title="Замовлення шафи купе у Рівному">Шафи-купе на замовлення</a></li>
+                        <li><a href="gallery_view.php?type=other" title="Виготовлення стінок, комодів у Рівному">Стінки на замовлення</a></li>
+                        <li><a href="gallery_view.php?type=children" title="Виготовлення корпусних меблів в дитячу кімнату">Дитячі меблі на замовлення</a></li>
+                        <li><a href="gallery_view.php?type=office" title="Замовлення офісних меблів у Рівному">Офісні меблі на замовлення</a></li>
+                        <li><a href="gallery_view.php?type=bedroom" title="Меблі для спальної кімнати виготовлення Рівне">Спальні на замовлення</a></li>
                     </ul>
                 </div>
 

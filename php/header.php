@@ -29,7 +29,7 @@ else {
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.php"><img src="../img/west-mebli_logotype%20.png" alt="logotype" class="logotype"></a>
+                            <a class="navbar-brand" href="index.php" title="logotype west mebli меблі на замовлення"><img src="../img/west-mebli_logotype%20.png"  class="logotype" alt="logotype" title="logotype west mebli виготовлення меблів у Рівному"></a>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav menu">

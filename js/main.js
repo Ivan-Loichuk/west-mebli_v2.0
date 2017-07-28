@@ -22,7 +22,7 @@ $(document).ready(function() {
 
  
     // navigation on click
-	$("#menu").on("click","a", function (event) {
+	$("#menu, .image-contact").on("click","a", function (event) {
 		//We cancel the standard processing of the goods by reference
 		event.preventDefault();
 
@@ -77,7 +77,13 @@ $(document).ready(function() {
 
     });
 */
+    var selCategory = sessionStorage.getItem("SelItem");
+    $('#img_category').val(selCategory);
 
+    $('#img_category').change(function() {
+        var selVal = $(this).val();
+        sessionStorage.setItem("SelItem", selVal);
+    });
 });
 
 // section <how to order>, mouse event
@@ -95,13 +101,14 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 });
 
 function getContent(id){
-    $('#output').html('<img src="LoaderIcon.gif" />');
+    var tab_content = document.getElementById('tab-content');
+    tab_content.innerHTML = '<div class="loading_gif"><img src="../img/loading.gif" /> </div>';
     $.ajax({
         url: "get_page.php",
         data:'id='+id,
         type: "POST",
         success:function(data){
-            var tab_content = document.getElementById('tab-content');
+
             if(data == 0){
                 tab_content.innerHTML = "Галерея пуста!!";
                 console.log(data);

@@ -10,7 +10,7 @@ hr{
   color: #E21312;
   background-color: #E21312;
   height: 1px;
-    border-top: inherit;
+  border-top: inherit;
 }
 
 header{
@@ -252,21 +252,6 @@ article a:hover{
    margin-top: 20px;
 }
 
-
-/* Slidebar */
-
-.nav-sidebar{
-    background-color: #2B4A8F;
-    border-radius: 1px;
-    margin-bottom: 15px;
-}
-.nav-sidebar a{
-    color: #fff;
-}
-.nav-sidebar .nav > li > a:hover{
-    background-color: #336cba;
-}
-
 /* Order*/
 
 
@@ -441,7 +426,7 @@ footer{
 }
 .left-footer div{
   margin-right:0;
-  padding-top: 20px;
+  padding-top: 0px;
   margin-left: 1%;
   color:#fff;
 }
@@ -456,6 +441,7 @@ footer{
   background-color: #FF0000;
   width: 40px;
   height: 40px;
+  margin-bottom: 20px;
 }
 .left-footer div i:hover{
   color: #000;
@@ -726,9 +712,60 @@ footer{
 
 /*  Gallery types */
 
-.gallery img{
+.img_block img{
     width: 100%;
     height: auto;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img_block img:hover{
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.img_block div a img{
+    box-shadow: none;
+    width: 70%;
+    height: 70%;
+}
+.img_block div a img:hover{
+    box-shadow: none;
+    width: 65%;
+    height: 65%;
+}
+.nav-sidebar {
+    padding-bottom: 20px;
+}
+.nav-sidebar li{
+
+}
+.nav-sidebar input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #2B4A8F;
+    color: #fff;
+}
+.nav-sidebar input:hover{
+    background-color: #6988CD;
+    color: #fff;
+    border: none;
+}
+
+.nav-sidebar input:focus{
+    background-color: #6988CD;
+    color: #fff;
+    border: none;
+}
+.img_block{
+    padding-bottom: 15px;
+}
+
+.loading_gif {
+    width: 100%;
+    text-align: center;
+}
+.loading_gif img{
+    margin-top: 50px;
+    width: 7%;
+
 }
 /*   add images in gallery.... form */
 .add_img td{
@@ -806,12 +843,23 @@ footer{
 }
 .close:hover { background: #00d9ff; }
 
-.nodelete {
-    width: 60px;
-    height: 25px;
-    background-color: #888888;
+.modalDialog #delete{
+    background-color: #333;
     color: #fff;
-    line-height: 25px;
+    border: none;
+    border-radius: 2px;
+    width: 65px;
+    height: 30px;
+    font-weight: bold;
+}
+.nodelete {
+    width: 65px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: #333;
+    color: #fff;
+    line-height: 30px;
     position: absolute;
     text-align: center;
     top: 55px;
@@ -820,21 +868,11 @@ footer{
     font-weight: bold;
     font-size: 14px;
 }
-.modalDialog button{
-    width: 60px;
-    height: 25px;
-    font-size: 14px;
-    background-color: #888888;
-    border: inherit;
-    color: white;
-    font-weight: bold;
-}
-.modalDialog button:hover{
-    color: #7a0000;
-}
-.nodelete:hover{
-    color: #7a0000;
+
+.nodelete:hover , #delete:hover{
+    background-color: #7a0000;
     text-decoration: inherit;
+    color: #fff;
 }
 
 /*  input file*/
@@ -868,6 +906,13 @@ footer{
     cursor: pointer;
     background-color: #224863;
     color: white;
+}
+#add_images #img_category{
+    width: 100%;
+    height: 40px;
+}
+#add_images #brnu{
+    padding: 3px;
 }
 
 /*//////TEST/////////////////////////*/
