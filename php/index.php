@@ -1,6 +1,59 @@
 <?php
  $data = $_POST;
 $_GET['type'] = "lang_ua";
+
+if (isset($_POST['lang_ru'])) {
+    $movies = simplexml_load_file('../xml/lang-ru.xml');
+    setcookie("lang", "lang-ru", time()+3600*24);
+}
+elseif(isset($_POST['lang_ua'])){
+    $movies = simplexml_load_file('../xml/lang-ua.xml');
+    setcookie("lang", "lang-ua", time()+3600*24);
+}
+else {
+    if (isset($_COOKIE["lang"])) {
+        $movies = simplexml_load_file('../xml/' . $_COOKIE["lang"] . '.xml');
+
+    }
+    else{
+        $movies = simplexml_load_file('../xml/lang-ua.xml');
+    }
+}
+$h3_carousel = [];
+$p_carousel = [];
+$sections_head = [];
+$gallery_a_title = [];
+$gallery_img_title = [];
+$gallery_img_alt = [];
+$gallery_h4 =[];
+$how_order_h3 = [];
+$how_order_p = [];
+$about_us_a = [];
+$about_us_a_title = [];
+$about_us_img_title =[];
+$about_us_img_alt = [];
+$about_us_p = [];
+
+
+foreach ($movies->movie->characters->character[1]->h3 as $h3) {array_push($h3_carousel, $h3);}
+foreach ($movies->movie->characters->character[1]->p as $p) {array_push($p_carousel, $p);}
+
+foreach ($movies->movie->characters->character[2]->h2 as $h2) {array_push($sections_head, $h2);}
+
+foreach ($movies->movie->characters->character[3]->a_title as $a_title) {array_push($gallery_a_title, $a_title);}
+foreach ($movies->movie->characters->character[3]->img_title as $title) {array_push($gallery_img_title, $title);}
+foreach ($movies->movie->characters->character[3]->img_alt as $alt) {array_push($gallery_img_alt, $alt);}
+foreach ($movies->movie->characters->character[3]->h4 as $h4) {array_push($gallery_h4, $h4);}
+
+foreach ($movies->movie->characters->character[4]->h3 as $h3) {array_push($how_order_h3, $h3);}
+foreach ($movies->movie->characters->character[4]->p as $p) {array_push($how_order_p, $p);}
+
+foreach ($movies->movie->characters->character[5]->a as $a) {array_push($about_us_a, $a);}
+foreach ($movies->movie->characters->character[5]->a_title as $a_title) {array_push($about_us_a_title, $a_title);}
+foreach ($movies->movie->characters->character[5]->img_title as $img_title) {array_push($about_us_img_title, $img_title);}
+foreach ($movies->movie->characters->character[5]->img_alt as $alt) {array_push($about_us_img_alt, $alt);}
+foreach ($movies->movie->characters->character[5]->p as $p) {array_push($about_us_p, $p);}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -34,42 +87,40 @@ $_GET['type'] = "lang_ua";
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                             <li data-target="#myCarousel" data-slide-to="3"></li>
                         </ol>
+                            <!--Wrapper for slides-->
+                        <div class="carousel-inner" role = "listbox" >
+                            <div class="item active" >
+                                <img src = "../img/korpusni-mebli-na-zamowlenia-rivne.JPG" alt = "фото West mebli виготовлення корпусних меблів" title = "Замовлення меблів у Рівному" >
+                                <div class="carousel-caption" >
+                                    <h3 ><?php echo $h3_carousel[0]?></h3 >
+                                    <p ><?php echo $p_carousel[0]?></p >
+                                </div >
+                            </div >
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="../img/korpusni-mebli-na-zamowlenia-rivne.JPG" alt="фото West mebli виготовлення корпусних меблів" title="Замовлення меблів у Рівному" >
-                                <div class="carousel-caption">
-                                    <h3>Замовлення меблів у Рівному</h3>
-                                    <p>Виготовлення корпусних меблів на замовлення.</p>
-                                </div>
-                            </div>
+                            <div class="item" >
+                                <img src = "../img/mebli-dla-spalni-na-zamowlenia-rivne.jpg" alt = "фото меблі для спальної кімнати" title = "Меблі для спальні на замовлення Рівне" >
+                                <div class="carousel-caption" >
+                                    <h3 > <?php echo $h3_carousel[1]?> </h3 >
+                                    <p ><?php echo $p_carousel[1]?></p >
+                                </div >
+                            </div >
 
-                            <div class="item">
-                                <img src="../img/mebli-dla-spalni-na-zamowlenia-rivne.jpg" alt="фото меблі для спальної кімнати" title="Меблі для спальні на замовлення Рівне">
-                                <div class="carousel-caption">
-                                    <h3>Меблі для спальної кімнати</h3>
-                                    <p>Індивідуальний дизайн на ваш смак</p>
-                                </div>
-                            </div>
+                            <div class="item" >
+                                <img src = "../img/mebli-dla-dytiachoi-kimnaty-rivne.jpg" alt = "фото дитячі меблі на замовлення" title = "Меблі для дитячої кімнати на замовлення" >
+                                <div class="carousel-caption" >
+                                    <h3 ><?php echo $h3_carousel[2]?> </h3 >
+                                    <p ><?php echo $p_carousel[2]?></p >
+                                </div >
+                            </div >
 
-                            <div class="item">
-                                <img src="../img/mebli-dla-dytiachoi-kimnaty-rivne.jpg" alt="фото дитячі меблі на замовлення" title="Меблі для дитячої кімнати на замовлення">
-                                <div class="carousel-caption">
-                                    <h3>Ексклюзивні дитячі кімнати</h3>
-                                    <p>Меблі для вашої дитини</p>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <img src="../img/mebli-dla-kuchni-na-zamowlenia-rivne.jpg" alt="фото меблі кухонні під замовлення Рівне" title="Меблі для кухні на замовлення у рівному">
-                                <div class="carousel-caption">
-                                    <h3>Сучасні кухні</h3>
-                                    <p>Створіть куточок своєї мрії</p>
-                                </div>
-                            </div>
-                        </div>
-
+                            <div class="item" >
+                                <img src = "../img/mebli-dla-kuchni-na-zamowlenia-rivne.jpg" alt = "фото меблі кухонні під замовлення Рівне" title = "Меблі для кухні на замовлення у рівному" >
+                                <div class="carousel-caption" >
+                                    <h3 ><?php echo $h3_carousel[3];?> </h3 >
+                                    <p > <?php echo $p_carousel[3];?> </p >
+                                </div >
+                            </div >
+                        </div >
                         <!-- Left and right controls -->
                         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -88,85 +139,85 @@ $_GET['type'] = "lang_ua";
 
 <section class="galeria" id="galeria">
     <div class="caption-gallery">
-        <h2>Галерея робіт</h2>
+        <h2><?php echo $sections_head[0]; ?></h2>
         <div class="container"><hr></div>
     </div>
 
     <div class="container mt40">
         <div class="row">
             <article class="col-xs-12 col-sm-6 col-md-4">
-                <a href="gallery_view.php" title="шафи купе на замовлення" onclick="getContent(1)" class="zoom" >
+                <a href="gallery_view.php" title="<?php echo $gallery_a_title[0];?>" onclick="getContent(1)" class="zoom" >
                     <div class="panel panel-default">
                         <div class="panel-body">
-                                <img src="../img/titles/cabinets.jpg" alt="Шафи-купе на замовлення в Рівному фото" title="Шафи купе на замовлення"/>
+                                <img src="../img/titles/cabinets.jpg" alt="<?php echo $gallery_img_alt[0];?>" title="<?php echo $gallery_img_title[0];?>"/>
                         </div>
                         <div class="panel-footer">
-                            <h4>Шафи купе</h4>
+                            <h4><?php echo $gallery_h4[0]; ?></h4>
                         </div>
                     </div>
                 </a>
             </article>
 
             <article class="col-xs-12 col-sm-6 col-md-4">
-                <a href="gallery_view.php?type=kitchen-furniture" title="Меблі для кухні на замовлення" onclick="getContent(2)" class="zoom">
+                <a href="gallery_view.php?type=kitchen-furniture" title="<?php echo $gallery_a_title[1];?>" onclick="getContent(2)" class="zoom">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                                <img src="../img/titles/kitchen.jpg" alt="фото меблі для кухні на замовлення" title="Замовлення меблів для кухні у Рівному" />
+                                <img src="../img/titles/kitchen.jpg" alt="<?php echo $gallery_img_alt[1];?>" title="<?php echo $gallery_img_title[1];?>" />
                         </div>
                         <div class="panel-footer">
-                            <h4>Кухні</h4>
+                            <h4><?php echo $gallery_h4[1]; ?></h4>
                         </div>
                     </div>
                 </a>
             </article>
 
             <article class="col-xs-12 col-sm-6 col-md-4">
-                <a href="gallery_view.php?type=bedroom" title="Спальні на замовлення у Рівному" class="zoom" >
+                <a href="gallery_view.php?type=bedroom" title="<?php echo $gallery_a_title[2];?>" class="zoom" >
                     <div class="panel panel-default">
                         <div class="panel-body">
-                                <img src="../img/titles/bedroom.jpg" alt="Меблі для спальні на замовлення у місті Рівне" title="Замовлення меблів для спальні" />
+                                <img src="../img/titles/bedroom.jpg" alt="<?php echo $gallery_img_alt[2];?>" title="<?php echo $gallery_img_title[2];?>" />
                         </div>
                         <div class="panel-footer">
-                            <h4>Спальні</h4>
+                            <h4><?php echo $gallery_h4[2]; ?></h4>
                         </div>
                      </div>
                 </a>
             </article>
 
             <article class="col-xs-12 col-sm-6 col-md-4">
-                <a href="gallery_view.php?type=children" title="Меблі в дитячу кімнату на замовлення" class="zoom" >
+                <a href="gallery_view.php?type=children" title="<?php echo $gallery_a_title[3];?>" class="zoom" >
                     <div class="panel panel-default">
                         <div class="panel-body">
-                                <img src="../img/titles/children.jpg" alt="Замовлення меблів в дитячу кімнату у Рівному" title="Меблі в дитячу кімнату Рівне"/>
+                                <img src="../img/titles/children.jpg" alt="<?php echo $gallery_img_alt[3];?>" title="<?php echo $gallery_img_title[3];?>"/>
                         </div>
                         <div class="panel-footer">
-                            <h4>В дитячу</h4>
+                            <h4><?php echo $gallery_h4[3]; ?></h4>
                         </div>
                     </div>
                 </a>
             </article>
 
             <article class="col-xs-12 col-sm-6 col-md-4">
-                <a href="gallery_view.php?type=other" title="Стінки, матраси, комоди на замовлення у Рівному" class="zoom" >
+                <a href="gallery_view.php?type=other" title="<?php echo $gallery_a_title[4];?>" class="zoom" >
                     <div class="panel panel-default">
                         <div class="panel-body">
-                                <img src="../img/titles/other.jpg" alt="Замовлення меблів у рівному" title="Стінки, комоди, матраси під замовлення" />
+                                <img src="../img/titles/other.jpg" alt="<?php echo $gallery_img_alt[4];?>" title="<?php echo $gallery_img_title[4];?>" />
                         </div>
                         <div class="panel-footer">
-                            <h4>Cтінки(різне)</h4>
+                            <h4><?php echo $gallery_h4[4];?></h4>
                         </div>
                     </div>
                 </a>
             </article>
 
             <article class="col-xs-12 col-sm-6 col-md-4">
-                <a href="gallery_view.php?type=office" title="Меблі для вашого офісу у Рівному" class="zoom">
+                <a href="gallery_view.php?type=office" title="<?php echo $gallery_a_title[5];?>" class="zoom">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                                <img src="../img/titles/office.jpg" alt="Офісні меблі на замовлення у Рівному" title="Офісні меблі на замовлення Рівне"/>
+                                <img src="../img/titles/office.jpg" alt="<?php echo $gallery_img_alt[5];?>" title="<?php echo $gallery_img_title[5];?>"/>
                         </div>
                         <div class="panel-footer">
-                            <h4>Офісні меблі</h4>
+                            <h4><?php echo $gallery_h4[5]; ?></h4>
                         </div>
                     </div>
                 </a>
@@ -176,7 +227,7 @@ $_GET['type'] = "lang_ua";
 </section>
 <section class="order" id="order">
     <div class="caption-order">
-        <h2>Як замовити?</h2>
+        <h2><?php echo $sections_head[1]; ?></h2>
         <div class="container"><hr></div>
     </div>
 
@@ -187,48 +238,48 @@ $_GET['type'] = "lang_ua";
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail call-us"  onmouseover="thumbnail_mouse_over('call-us')" onmouseout="thumbnail_mouse_out('call-us')">
                         <div class="caption" id="call-us">
-                            <h3>1. Зателефонуйте нам</h3>
-                            <p>Зв'яжіться з нами за телефоном або на сайті і домовтеся про зустріч.</p>
+                            <h3><?php echo $how_order_h3[0]; ?></h3>
+                            <p><?php echo $how_order_p[0]; ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail meet" onmouseover="thumbnail_mouse_over('meet')" onmouseout="thumbnail_mouse_out('meet')">
                         <div class="caption" id="meet">
-                            <h3>2. Зустріч.</h3>
-                            <p>У вигідний для вас час, завітаємо до вас, щоб зрозуміти ваші потреби, виконати попередні заміри і обговорити особливості що стосуються функціональності і дизайну нових меблів.</p>
+                            <h3><?php echo $how_order_h3[1]; ?></h3>
+                            <p><?php echo $how_order_p[1]; ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail project" onmouseover="thumbnail_mouse_over('project')" onmouseout="thumbnail_mouse_out('project')"">
                         <div class="caption" id="project">
-                            <h3>3. Проект майбутніх меблів.</h3>
-                            <p>Наш досвідчений дизайнер виконає для вас індивідуальний проект. Більше того, ви отримаєте повну інформацію що до цін. Якщо ви вже маєте проект - пришліть його нам - ми швидко представим вам вартість його реалізації.</p>
+                            <h3><?php echo $how_order_h3[2]; ?></h3>
+                            <p><?php echo $how_order_p[2]; ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail umowa" onmouseover="thumbnail_mouse_over('agreement')" onmouseout="thumbnail_mouse_out('agreement')">
                         <div class="caption" id="agreement">
-                            <h3>4. Договір.</h3>
-                            <p>По узгодженню проекту ми підготуємо договір, у якому будуть описані особливості вспівпраці, перелік робіт, час реалізації а також спосіб оплати.</p>
+                            <h3><?php echo $how_order_h3[3]; ?></h3>
+                            <p><?php echo $how_order_p[3]; ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail do-project" onmouseover="thumbnail_mouse_over('do-project')" onmouseout="thumbnail_mouse_out('do-project')">
                         <div class="caption" id="do-project">
-                            <h3>5. Реалізація проекту.</h3>
-                            <p>Після підписання договору і отримання авансу, розпочнемо виготовлення ваших меблів. Час реалізації проекту залежить від ступіня важкості проекту, вибраних матеріалів.</p>
+                            <h3><?php echo $how_order_h3[4]; ?></h3>
+                            <p><?php echo $how_order_p[4]; ?></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail transport" onmouseover="thumbnail_mouse_over('delivery')" onmouseout="thumbnail_mouse_out('delivery')">
                         <div class="caption" id="delivery">
-                            <h3>6. Доставка і встановлення.</h3>
-                            <p>Встановлення нових меблів виконаємо швидко й професійно - звичайно в зручний для вас час.</p>
+                            <h3><?php echo $how_order_h3[5]; ?></h3>
+                            <p><?php echo $how_order_p[5]; ?></p>
                         </div>
                     </div>
                 </div>
@@ -240,97 +291,55 @@ $_GET['type'] = "lang_ua";
 
 <section class="about_us" id="about_us">
     <div class="about-caption">
-        <h2>Про нас</h2>
+        <h2><?php echo $sections_head[2]; ?></h2>
         <div class="container"><hr></div>
     </div>
     <div class="container">
         <div class="about_us-content">
             <div class="block-content col-md-8 col-sm-8 col-xs-12">
                 <div class="title">
-                    <a href="#" title="Корпусні меблі на замовлення у Рівному">Замовлення меблів у Рівному</a>
+                    <a href="#" title="<?php echo $about_us_a_title[0]; ?>"><?php echo $about_us_a[0]; ?></a>
                 </div>
-                <p> Виготовлення корпусних меблів на замовлення.</p>
-                <p>Можна зробити індивідуальне замовлення на будь-які корпусні меблі: <span class="underline"> сучасні кухні,кухні з вмонтованою технікою, класичні кухні, шафи-купе, спальні, прихожі, офісні меблі </span>та ін.
-                    Індивідуальний підхід до кожного клієнта. Можливість підібрати власний дизайн.<span class="biggest_word"> Встановлення безкоштовно!!</span><br/><br/>
-                    Ми виконуємо замовлення різної складності – від полички до масштабних об’єктів.
-                    Компанія <a href="#" title="Виготовлення корпусних меблів місто Рівне"><span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span></a> пропонує професійні послуги дизайну меблів на замовлення та виготовлення меблів на замовлення у Рівному для Вашого дому та офісу.
-                    Ми пропонуємо меблі на замовлення як по індивідуальному дизайну, так і меблі серійного виробництва на Ваш смак. <br> Ми можемо по бажанню замовника вносити зміни і розробляти дизайн кухні персонально під Ваші індивідуальні потреби.
-                    Меблі будуть слугувати довгі роки і радуватимуть своєю якістю, неповторністю та доступними цінами. Ми стараємось для Вас!<br/><br/></p>
+                <p><?php echo $about_us_p[0]; ?> <br/><br/></p>
             </div>
             <div class="image-contact col-md-4 col-sm-4 col-xs-6">
-                <a href="#contact_us"><img src="../img/feedback.png" alt="Контакт west-mebli місто Рівне" title="Меблі на замовлення контакти в Рівному"></a>
+                <a href="#contact_us" title="<?php echo $about_us_a_title[1]; ?>"><img src="../img/feedback.png" alt="<?php echo $about_us_img_alt[0]; ?>" title="<?php echo $about_us_img_title[0]; ?>"></a>
             </div>
             <div class="image col-md-3 col-sm-3 col-xs-6" id="image">
-                <a href=""><img src="../img/item_furniture2.jpg" alt="Шафа купе виготовлення меблів Рівне" title="Шафи купе на замовлення в Рівному"></a>
+                <a href="gallery_view.php" title="<?php echo $about_us_a_title[2]; ?>"><img src="../img/item_furniture2.jpg" alt="<?php echo $about_us_img_alt[1]; ?>" title="<?php echo $about_us_img_title[1]; ?>"></a>
             </div>
             <div class="block-content  col-md-9 col-sm-9 col-xs-12">
                 <div class="title">
-                    <a href="gallery_view.php" title="Шафи купе на замовлення Рівне West mebli">Шафи-купе Рівне</a>
+                    <a href="gallery_view.php" title="<?php echo $about_us_a_title[3]; ?>"><?php echo $about_us_a[1]; ?></a>
                 </div>
-                <p>
-                    Шафи купе - це система, яка дозволяє грамотно організувати і використати простір у квартирі чи офісі та одночасно являється елементом інтер’єру та дизайну помешкання.
-                    Шафи-купе виробництва <a href="#" title="Корпусні меблі на замовлення Рівне"><span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span></a> проектуються та виготовляються за індивідуальним проектом, з врахуванням особливостей Вашого приміщення.
-                    Внутрішній простір шафи купе проектується під Ваші потреби, і може враховувати будь-які конструктивні побажання.
-                    Дизайн шафи купе ексклюзивний!
-                    Шафа-купе - є одним з найпопулярніших видів продукції, що виготовляється на замовлення в компанії <a href="#" title="West mebli замовлення меблів у Рівному"><span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span></a>.
-                    <br>&emsp;&emsp;Завдяки своїй високій функціональності, по кількості замовлених меблів, шафи-купе займають лідируючі позиції, конкурувати з якими можуть тільки кухні.
-                    Шафа-купе відмінно впишеться в спальню або вітальню вашого будинку, в офісі або дитячій кімнаті. При грамотному дизайні приміщення, шафа-купе дозволить максимально використовувати кожен метр житлової площі, а розсувні двері зможуть поліпшити зовнішній вигляд приміщення.
-                    Якщо у вас є вільна ніша, то вона легко змогла б стати місцем для вашої нової шафи-купе, адже у нас ви можете замовити шафу-купе точно під розмір вашого приміщення.
-                    В даному випадку, шафу купе можна зробити без стінок, що не тільки збереже вільний простір, а й заощадить кошти.
-                    Вибираючи двері для вашої шафи-купе на замовлення варто приділити увагу приміщенню, де він буде знаходитися.
-                    Механізм відкриття шафи, дозволити заощадити значний простір у вашому будинку.
-                    Розсувний механізм шаф-купе гарантує плавність ходу і абсолютну безшумність дверей, а правильний вибір профілю, забезпечить довговічність використання вашої шафи.
-                    <br>&emsp;&emsp;Наповнення шафи-купе буде повністю залежати від вашої фантазії і може бути обмежено або внутрішнім простором, або вашим бюджетом.
-                    У свою чергу, наше виробництво <a href="#" title="Меблі west на замовлення Рівне"><span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span></a> готове вам запропонувати максимальний вибір комплектуючих для виготовлення шаф-купе.
-                    <br/><br/></p>
+                <p><?php echo $about_us_p[1]; ?><br/><br/></p>
             </div>
             <div class="block-content col-md-8 col-sm-8 col-xs-12">
                 <div class="title">
-                    <a href="gallery_view.php?type=bedroom" title="Спальні на замовлення в Рівному West mebli">Спальні Рівне</a>
+                    <a href="gallery_view.php?type=bedroom" title="<?php echo $about_us_a_title[4]; ?>"><?php echo $about_us_a[2]; ?></a>
                 </div>
-                <p>
-                    Спальні на замовлення - ідеальний спосіб роздобути стильне, затишне і практичне гніздечко для себе і своєї другої половинки. Вибір меблів для спальні – це серйозне завдання, яке стоїть перед власником квартири.
-                    Від якості меблів для спалень залежить якість вашого сну і відпочинку. Всі предмети інтер'єру спальної кімнати мають бути практичними і зручними, при цьому мати індивідуальний дизайн.
-                    <br>Крім того, ми пропонуємо як спальні гарнітури в комплекті, так і модульні системи, перевагою яких є можливість підібрати окремі елементи для Вашої спальні.
-                    Спальні самий інтимний і в той же час найбільш використовуваний елемент інтер'єру вашого будинку. Про того наскільки зручна і затишна спальня залежить настрій і навіть ваше самопочуття.
-                    Ми допоможемо вибрати вам спальню яка буде найкраще пасувати вашому смаку з урахуванням матеріальних можливостей і габаритів вашої кімнати.<br/><br/></p>
+                <p><?php echo $about_us_p[2]; ?><br/><br/></p>
             </div>
             <div class="image col-md-4 col-sm-4 col-xs-6" id="image2">
-                <a href="gallery_view.php?type=bedroom" title="Виготовлення меблів для спальні Рівне"> <img src="../img/bed_room.jpg" alt="фото спальні на замовлення Рівне" title="Виготовлення меблів для спальної кімнати"></a>
+                <a href="gallery_view.php?type=bedroom" title="<?php echo $about_us_a_title[5]; ?>"> <img src="../img/bed_room.jpg" alt="<?php echo $about_us_img_alt[2]; ?>" title="<?php echo $about_us_img_title[2]; ?>"></a>
             </div>
             <div class="image col-md-4 col-sm-4 col-xs-6" id="image3">
-                <a href="gallery_view.php?office" title="Меблі для офісу на замовлення Рівне"><img src="../img/office_furniture.jpg" alt="фото офісні меблі на замовлення Рівне" title="Виготовлення меблів для офісу Рівне"></a>
+                <a href="gallery_view.php?office" title="<?php echo $about_us_a_title[6]; ?>"><img src="../img/office_furniture.jpg" alt="<?php echo $about_us_img_alt[3]; ?>" title="<?php echo $about_us_img_title[3]; ?>"></a>
             </div>
             <dic class="block-content right col-md-8 col-sm-8 col-xs-12">
                 <div class="title">
-                    <a href="gallery_view.php?office" title="Меблі для офісу на замовлення Рівне West mebli">Офісні меблі Рівне</a>
+                    <a href="gallery_view.php?office" title="<?php echo $about_us_a_title[7]; ?>"><?php echo $about_us_a[3]; ?></a>
                 </div>
-                <p>
-                    Ми пропонуємо якісні меблі для офісу, індивідуальний і ексклюзивний дизайн офісних меблів,
-                    виготовлення офісних меблів та проектування і встановлення меблів для офісу.
-                    Каталог офісних меблів нашої компанії Ви можете переглянути у розділі <a href="#">офісні меблі на замовлення.</a><br/><br/></p>
+                <p><?php echo $about_us_p[3]; ?><br/><br/></p>
             </dic>
             <div class="block-content col-md-8 col-sm-8 col-xs-12">
                 <div class="title">
-                    <a href="gallery_view.php?type=kitchen-furniture" title="Меблі для кухні на замовлення Рівне West">Кухні Рівне</a>
+                    <a href="gallery_view.php?type=kitchen-furniture" title="<?php echo $about_us_a_title[8]; ?>"><?php echo $about_us_a[4]; ?></a>
                 </div>
-                <p>
-                    Всі <a href="gallery_view.php?type=kitchen-furniture" title="Замовлення меблів для кухні у Рівному"><span class="color_word" title="West mebli меблі на замовлення Рівне">кухні-west</span></a> на замовлення виготовляються по індивідуальному проекті, з урахуванням всіх вимог і побажань замовника, розміри меблів, кольори, фурнітура й комплектація.
-                    Висока якість наших кухонних меблів досягається завдяки використанню сучасного встаткування й передових технологій.
-                    Кухні на замовлення в Рівному від <a href="#" title="Виготовлення меблів Рівне"><span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span></a> – це Ваше правильне і обдумане рішення.
-                    Ви зможете вибрати той варіант кухні, що буде повністю відповідати вашій кухні мрії.
-                    <br>Саме кухня – місце творчості, в якій Ви неодмінно будете робити свої кулінарні подвиги.
-                    Кожне приміщення в квартирі має своє функціональне призначення. А це означає, що і до вибору інтер'єру потрібно підходити з точки зору його призначення.
-                    Можна на кухні поставити ліжко, і зі спальні зробити кабінет. Але це стає необхідним тільки в разі катастрофічного браку місць.
-                    Але для кожної відповідної зони виробники виготовляють меблі відповідної функціональності.
-                    Меблі для кухні на замовлення дозволяє стати володарем інтер'єру повністю виготовленого за власним смаком.
-                    Кухні за індивідуальним проектом в м.Рівному за доступними цінами.
-                    <br>Неможливо уявити собі сучасну квартиру або будинок без стильних і зручних меблів для кухні.<br>
-                    <a href="#" title="West mebli корпусні меблі під замовлення"><span class="color_word" title="West mebli меблі на замовлення Рівне">Ми</span></a> пропонує найширший вибір кухонних гарнітурів на будь-який смак і гаманець.
-                    У нас ви знайдете найприйнятніший варіант кухні на замовлення в Рівному, як за ціною, так і по дизайну.</p>
+                <p><?php echo $about_us_p[4]; ?></p>
             </div>
             <div class="image col-md-4 col-sm-4 col-xs-6" id="image4" style="margin-top: 40px;">
-                <a href="gallery_view.php?type=kitchen-furniture" title="Меблі для кухні на замовлення Рівне"> <img src="../img/kuhnia-na_zamowlenia.jpg" alt="фото кухні на замовлення" title="Виготовлення меблів для кухні"></a>
+                <a href="gallery_view.php?type=kitchen-furniture" title="<?php echo $about_us_a_title[9]; ?>"> <img src="../img/kuhnia-na_zamowlenia.jpg" alt="<?php echo $about_us_img_alt[4]; ?>" title="<?php echo $about_us_img_title[4]; ?>"></a>
             </div>
         </div>
     </div><!-- end container -->
@@ -340,7 +349,7 @@ $_GET['type'] = "lang_ua";
     <div class="caption-contact">
         <div class="container">
             <div class="row">
-                <h2>Контакт</h2>
+                <h2><?php echo $sections_head[3]; ?></h2>
                 <div class="container"><hr></div>
             </div>
         </div>

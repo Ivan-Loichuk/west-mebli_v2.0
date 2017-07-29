@@ -33,7 +33,7 @@ else {
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav menu">
-                              <?php  foreach ($movies->movie->characters->character->nav_menu as $nav_menu) {
+                              <?php  foreach ($movies->movie->characters->character[0]->nav_menu as $nav_menu) {
 
                                 switch((string) $nav_menu['type']) { // Получение атрибутов элемента по индексу
                                 case '1':
