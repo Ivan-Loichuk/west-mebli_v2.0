@@ -686,6 +686,10 @@ footer{
   font-size: 16px;
   font-weight: 500;
 }
+.contact-form button[disabled]:hover{
+    background-color: #2B4A8F;
+    color: #fff;
+}
 .contact-form button:hover{
   background-color: #FF0000;
   border: none;
@@ -694,12 +698,20 @@ footer{
 .info-contact{
   background-color: #2B4A8F;
   color:#fff;
-  margin: 15px 0;
+  margin: 30px 0;
   padding: 20px
 }
 .info-contact h2{
   line-height: 40px;
 }
+.error{
+    color: #FF0000;
+}
+.success{
+    color: #1db30a;
+    font-size: 18px;
+}
+
 
 /*gallery items */
 .img-responsive, .thumbnail > img,

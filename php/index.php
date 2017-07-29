@@ -351,18 +351,16 @@ $_GET['type'] = "lang_ua";
             <div class="row">
                 <div class="col-md-offset-1 col-xs-12 col-md-4 col-xs-12">
                     <h3>Зворотній зв'язок</h3>
-                    <form>
-                        <div class="signin_form">
-                            <input type="text" class="form-control" id="name" placeholder="Як до вас звертатися?">
-                        </div>
-                        <div class="signin_form">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="signin_form">
-                            <input type="text" class="form-control" id="number" placeholder="Телефон">
-                        </div>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        <button type="submit" class="btn btn-default btn-signin  button">Надіслати</button>
+                    <form action="send_mail.php" method="POST">
+                        <input type="text" class="form-control" required="required" name="user_name" id="name" placeholder="Як до вас звертатися?">
+                        <span class="error" id="err_name"></span>
+                        <input type="email" class="form-control"  required="required" name="user_email" id="email" placeholder="Email">
+                        <span class="error" id="err_email"></span>
+                        <input type="text" class="form-control" required="required" name="user_number" id="number" placeholder="Телефон">
+                        <span class="error" id="err_number"></span>
+                        <textarea name="message" id="message"  required="required" cols="30" rows="10"></textarea>
+                        <span class="error" id="err_message"></span>
+                        <button type="submit" class="btn btn-default button"  disabled="disabled" id="send_btn">Надіслати</button>
                     </form>
 
                 </div>
@@ -376,6 +374,7 @@ $_GET['type'] = "lang_ua";
                             andriy.kuryshko@mail.ru</p>
                         <p><i class="fa fa-map-marker"> </i> Україна, м.Рівне</p>
                     </div>
+                    <span class="success" id="success_msg"></span>
                 </div>
             </div> <!-- end row -->
         </div> <!-- end container -->

@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="641038f8-0421-4ed1-8180-f5fec7063745" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/good-kids-room-modern-kids-room-shelf2.jpg" afterPath="$PROJECT_DIR$/img/mebli-dla-dytiachoi-kimnaty-rivne.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/main_carousel.JPG" afterPath="$PROJECT_DIR$/img/korpusni-mebli-na-zamowlenia-rivne.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/slide2.jpg" afterPath="$PROJECT_DIR$/img/mebli-dla-spalni-na-zamowlenia-rivne.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/slidsde1.jpg" afterPath="$PROJECT_DIR$/img/mebli-dla-kuchni-na-zamowlenia-rivne.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/loading.gif" afterPath="$PROJECT_DIR$/img/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/titles/other.jpg" afterPath="$PROJECT_DIR$/img/titles/other.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/add-image.php" afterPath="$PROJECT_DIR$/php/add-image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/footer.php" afterPath="$PROJECT_DIR$/php/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/gallery_view.php" afterPath="$PROJECT_DIR$/php/gallery_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/get_page.php" afterPath="$PROJECT_DIR$/php/get_page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/header.php" afterPath="$PROJECT_DIR$/php/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/index.php" afterPath="$PROJECT_DIR$/php/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/select-gallery.php" afterPath="$PROJECT_DIR$/php/select-gallery.php" />
     </list>
     <ignored path="west-mebli_v2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +29,45 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1464">
-              <caret line="317" column="72" lean-forward="false" selection-start-line="317" selection-start-column="72" selection-end-line="317" selection-end-column="72" />
+            <state relative-caret-position="-68">
+              <caret line="363" column="27" lean-forward="true" selection-start-line="363" selection-start-column="27" selection-end-line="363" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="send_mail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/send_mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <marker date="1501351100932" expanded="true" signature="1184:1430" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1184:1493" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1184:1494" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1184:1575" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1184:1649" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1184:1728" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1184:1780" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1191:1220" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1191:1251" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1258:1430" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1270:1301" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1376:1395" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1413:1430" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1432:1449" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1757:1772" ph="..." />
+                <marker date="1501351100932" expanded="true" signature="1757:1780" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -51,28 +76,18 @@
       <file leaf-file-name="select-gallery.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/select-gallery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="46" />
+            <state relative-caret-position="245">
+              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="443" column="21" lean-forward="false" selection-start-line="443" selection-start-column="21" selection-end-line="443" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="230">
+              <caret line="711" column="20" lean-forward="true" selection-start-line="711" selection-start-column="20" selection-end-line="711" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -81,7 +96,7 @@
       <file leaf-file-name="get_page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/get_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="-112">
               <caret line="18" column="107" lean-forward="false" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
               <folding>
                 <marker date="1501272425507" expanded="true" signature="65:106" ph="SELECT * FRO... photos" />
@@ -108,33 +123,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gallery_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/gallery_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-              <folding>
-                <marker date="1501274227491" expanded="true" signature="2574:2587" ph="..." />
-                <marker date="1501274227491" expanded="true" signature="2728:2739" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="add-image.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/add-image.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
+            <state relative-caret-position="-129">
               <caret line="37" column="102" lean-forward="false" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-658">
+            <state relative-caret-position="17">
               <caret line="31" column="180" lean-forward="false" selection-start-line="31" selection-start-column="180" selection-end-line="31" selection-end-column="180" />
               <folding />
             </state>
@@ -144,7 +146,7 @@
       <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="561">
               <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="66" />
               <folding />
             </state>
@@ -157,18 +159,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rwd</find>
-      <find>location</find>
-      <find>lang-ul</find>
-      <find>.carousel-inner &gt; .item &gt; im</find>
-      <find>headhesive--stick</find>
-      <find>background-image</find>
-      <find>background</find>
       <find>ht</find>
       <find>hr</find>
       <find>order</find>
@@ -192,6 +188,13 @@
       <find>moda</find>
       <find>.left-footer div i</find>
       <find>kitchen</find>
+      <find>signin_form</find>
+      <find>btn-signin</find>
+      <find>user_name</find>
+      <find>contact-form</find>
+      <find>.info-contact</find>
+      <find>button</find>
+      <find>su</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\west-mebli_v2.0</dir>
@@ -233,12 +236,14 @@
         <option value="$PROJECT_DIR$/php/add-image.php" />
         <option value="$PROJECT_DIR$/php/get_page.php" />
         <option value="$PROJECT_DIR$/php/gallery_view.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/php/select-gallery.php" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/php/footer.php" />
-        <option value="$PROJECT_DIR$/php/index.php" />
         <option value="$PROJECT_DIR$/php/header.php" />
+        <option value="$PROJECT_DIR$/php/index.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/fff.html" />
+        <option value="$PROJECT_DIR$/php/send_mail.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -300,8 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,22 +317,10 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="west-mebli_v2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="west-mebli_v2.0" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,6 +330,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -500,23 +492,24 @@
       <workItem from="1501169098564" duration="11891000" />
       <workItem from="1501221925746" duration="557000" />
       <workItem from="1501270410286" duration="10646000" />
+      <workItem from="1501324138730" duration="21585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246341000" />
+    <option name="totallyTimeSpent" value="267926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21406959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19312602" sideWeight="0.5045386" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20122887" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -551,14 +544,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_CustomFileInputs.zip/CustomFileInputs/js/custom-file-input.js" />
-    <entry file="file://$PROJECT_DIR$/js/lightbox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/lightbox.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3349">
@@ -693,35 +678,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/foto_original/20160912_172738.jpg" />
-    <entry file="file://$PROJECT_DIR$/img/foto_original/20160930_173140.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/miniaturki/mini-20160930_173140.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/img/foto_original/20160930_173140.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/miniaturki/mini-20160930_173140.jpg" />
     <entry file="file://$PROJECT_DIR$/img/foto_original/20160923_143035.JPG.jpg" />
     <entry file="file://$PROJECT_DIR$/img/miniaturki/mini-20160923_143035.JPG.jpg" />
     <entry file="file://$PROJECT_DIR$/img/miniaturki/mini-20160912_172738.jpg" />
-    <entry file="file://$PROJECT_DIR$/img/miniaturki/mini-20160923_135412.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/img/miniaturki/mini-20160923_135412.jpg" />
     <entry file="file://$PROJECT_DIR$/img/loading.gif">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="443" column="21" lean-forward="false" selection-start-line="443" selection-start-column="21" selection-end-line="443" selection-end-column="21" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/korpusni-mebli-na-zamowlenia-rivne.JPG">
@@ -744,25 +709,52 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/php/gallery_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="1224">
+          <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <marker date="1501274227491" expanded="true" signature="2574:2587" ph="..." />
+            <marker date="1501274227491" expanded="true" signature="2728:2739" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="180" lean-forward="false" selection-start-line="31" selection-start-column="180" selection-end-line="31" selection-end-column="180" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/add-image.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
+        <state relative-caret-position="-129">
           <caret line="37" column="102" lean-forward="false" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fff.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/get_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="-112">
           <caret line="18" column="107" lean-forward="false" selection-start-line="18" selection-start-column="107" selection-end-line="18" selection-end-column="107" />
           <folding>
             <marker date="1501272425507" expanded="true" signature="65:106" ph="SELECT * FRO... photos" />
@@ -788,45 +780,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/gallery_view.php">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
-          <folding>
-            <marker date="1501274227491" expanded="true" signature="2574:2587" ph="..." />
-            <marker date="1501274227491" expanded="true" signature="2728:2739" ph="..." />
-          </folding>
+        <state relative-caret-position="1207">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/select-gallery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="245">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/footer.php">
+    <entry file="file://$PROJECT_DIR$/php/send_mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="33" column="66" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="66" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <marker date="1501351100932" expanded="true" signature="1184:1430" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1184:1493" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1184:1494" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1184:1575" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1184:1649" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1184:1728" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1184:1780" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1191:1220" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1191:1251" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1258:1430" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1270:1301" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1376:1395" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1413:1430" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1432:1449" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1757:1772" ph="..." />
+            <marker date="1501351100932" expanded="true" signature="1757:1780" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1464">
-          <caret line="317" column="72" lean-forward="false" selection-start-line="317" selection-start-column="72" selection-end-line="317" selection-end-column="72" />
+        <state relative-caret-position="-68">
+          <caret line="363" column="27" lean-forward="true" selection-start-line="363" selection-start-column="27" selection-end-line="363" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/header.php">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-658">
-          <caret line="31" column="180" lean-forward="false" selection-start-line="31" selection-start-column="180" selection-end-line="31" selection-end-column="180" />
+        <state relative-caret-position="230">
+          <caret line="711" column="20" lean-forward="true" selection-start-line="711" selection-start-column="20" selection-end-line="711" selection-end-column="20" />
           <folding />
         </state>
       </provider>
