@@ -163,7 +163,7 @@ $(document).ready(function() {
                     $('#email').val ("");
                     $('#number').val("");
                     $('#message').val ("");
-                    $('#success_msg').html("Повідомлення надіслано.<br>Ми зв'яжемося з вами найближчим часом");
+                    $('#success_msg').html(data);
                     $('#err_number, #err_message, #err_email').html("");
                     $('#email').css ("border-color", "#A5B3B1");
                     $('#number').css ("border-color", "#A5B3B1");
@@ -172,7 +172,7 @@ $(document).ready(function() {
                     $('#send_btn').attr ("disabled", "disabled");
                 } else {
                     if (data == false)
-                        alert ("Что-то пошло не так! Сообщение не отправлено");
+                        $('#err_message').html(data);
                     else {
                         switch (data) {
                             case "Ім'я не вказано":
@@ -233,6 +233,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
 function getContent(id){
     var tab_content = document.getElementById('tab-content');
     tab_content.innerHTML = '<div class="loading_gif"><img src="../img/loading.gif" /> </div>';
+
     $.ajax({
         url: "get_page.php",
         data:'id='+id,
@@ -246,11 +247,9 @@ function getContent(id){
             else {
                 tab_content.innerHTML = data;
             }
-
         }
     });
 }
-
 /*
      delete image from galery
  */

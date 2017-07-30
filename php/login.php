@@ -26,10 +26,6 @@ if( isset($data['do_login'])){
 
     }
 
-    if(!empty($errors)){
-        echo '<div style="color: red;">'. array_shift($errors).'</div><hr>';
-        $errors = null;
-        //header('Location: index.php#footer');
-    }
+    $_SESSION['errors'] = $errors;
 }
 ?>

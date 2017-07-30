@@ -1,42 +1,37 @@
-
 <footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <div class="left-footer">
-                    <h2>Про нас</h2>
-                    <p>Виготовлення корпусних меблів на замовлення в місті Рівному.
-                        <a href="#" title="West-mebli корпусні меблі на замовлення"><span class="color_word" title="West mebli меблі на замовлення Рівне">«WEST-MEBLI»</span></a> пропонує професійні послуги дизайну меблів на замовлення та виготовлення меблів на замовлення у Рівному для Вашого дому та офісу.</p>
+                    <h2><?php echo $lang->lang_ua['footer_h2'][0]; ?></h2>
+                    <p><?php echo $lang->lang_ua['footer_p'][0]; ?></p>
 
-                    <div><a href="https://vk.com/club93836477" title="west mebli в вконтакте замовлення корпусних меблів"><i class="fa fa-vk"></i></a>
-                        <a href="https://ok.ru/group/54954728423433" title="west mebli в однокласниках виготовлення курпусних меблів"><i class="fa fa-odnoklassniki"></i></a>
-                        <a href="https://www.facebook.com/groups/1790465037903699" title="west mebli на фейсбуку корпусні меблі на замовлення рівне"><i class="fa fa-facebook-f"></i> </a></div>
-                    </ul>
+                    <div>
+                        <a href="https://vk.com/club93836477" title="<?php echo $lang->lang_ua['footer_a_title'][0]; ?>"><i class="fa fa-vk"></i></a>
+                        <a href="https://ok.ru/group/54954728423433" title="<?php echo $lang->lang_ua['footer_a_title'][1]; ?>"><i class="fa fa-odnoklassniki"></i></a>
+                        <a href="https://www.facebook.com/groups/1790465037903699" title="<?php echo $lang->lang_ua['footer_a_title'][2]; ?>"><i class="fa fa-facebook-f"></i> </a>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <div class="center-footer">
-                    <h2>Зв'яжіться з нами</h2>
-                    <p><i class="fa fa-location-arrow"></i>
-                        Україна, м.Рівне</p>
-                    <p><i class="fa fa-phone"></i>
-                        (067) 38 78 803 <br><i class="fa fa-phone"></i>
-                        (093) 25 85 861</h3></p>
-                    <p><i class="fa fa-envelope-o"></i>
-                        andriy.kuryshko@mail.ru</p>
+                    <h2><?php echo $lang->lang_ua['footer_h2'][1]; ?></h2>
+                    <p><?php echo $lang->lang_ua['footer_p'][1]; ?></p>
+                    <p><?php echo $lang->lang_ua['footer_p'][2]; ?></p>
+                    <p><?php echo $lang->lang_ua['footer_p'][3]; ?></p>
 
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <div class="right-footer">
-                    <h2>Наша продукція</h2>
+                    <h2><?php echo $lang->lang_ua['footer_h2'][2]; ?></h2>
                     <ul>
-                        <li><a href="gallery_view.php?type=kitchen-furniture" title="Виготовлення корпусних меблів для кухні">Кухні на замовлення</a></li>
-                        <li><a href="gallery_view.php" title="Замовлення шафи купе у Рівному">Шафи-купе на замовлення</a></li>
-                        <li><a href="gallery_view.php?type=other" title="Виготовлення стінок, комодів у Рівному">Стінки на замовлення</a></li>
-                        <li><a href="gallery_view.php?type=children" title="Виготовлення корпусних меблів в дитячу кімнату">Дитячі меблі на замовлення</a></li>
-                        <li><a href="gallery_view.php?type=office" title="Замовлення офісних меблів у Рівному">Офісні меблі на замовлення</a></li>
-                        <li><a href="gallery_view.php?type=bedroom" title="Меблі для спальної кімнати виготовлення Рівне">Спальні на замовлення</a></li>
+                        <li><a href="gallery_view.php?type=kitchen-furniture" title="<?php echo $lang->lang_ua['footer_a_title'][3]; ?>"><?php echo $lang->lang_ua['footer_a'][0]; ?></a></li>
+                        <li><a href="gallery_view.php" title="<?php echo $lang->lang_ua['footer_a_title'][4]; ?>"><?php echo $lang->lang_ua['footer_a'][1]; ?></a></li>
+                        <li><a href="gallery_view.php?type=other" title="<?php echo $lang->lang_ua['footer_a_title'][5]; ?>"><?php echo $lang->lang_ua['footer_a'][2]; ?></a></li>
+                        <li><a href="gallery_view.php?type=children" title="<?php echo $lang->lang_ua['footer_a_title'][6]; ?>"><?php echo $lang->lang_ua['footer_a'][3]; ?></a></li>
+                        <li><a href="gallery_view.php?type=office" title="<?php echo $lang->lang_ua['footer_a_title'][7]; ?>"><?php echo $lang->lang_ua['footer_a'][4]; ?></a></li>
+                        <li><a href="gallery_view.php?type=bedroom" title="<?php echo $lang->lang_ua['footer_a_title'][8]; ?>"><?php echo $lang->lang_ua['footer_a'][5]; ?></a></li>
                     </ul>
                 </div>
 
