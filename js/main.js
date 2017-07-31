@@ -74,60 +74,53 @@ $(document).ready(function() {
     klient validation
      */
    var valid = false;
-    $('#name').on('input',function () {
+    $('#name').on('input',function () {   /* name validation */
         if($('#name').val() == ""){
             $('#name').css ("border-color", "#f70515");
             valid = false;
-            console.log(valid);
         }
         else {
             $('#name').css ("border-color", "#6BB343");
             $('#err_name').html("");
             valid = true;
-            console.log(valid);
         }
     });
-    $('#number').on('input', function () {
+    $('#number').on('input', function () {  /* number validation */
         if(!($('#number').val().match('[0-9]{9,13}'))){
             $('#number').css ("border-color", "#f70515");
             valid = false;
-            console.log(valid);
         }
         else {
             $('#number').css ("border-color", "#6BB343");
             $('#err_number').html("");
             valid = true;
-            console.log(valid);
         }
     });
-    $('#email').on('input', function () {
+    $('#email').on('input', function () {   /* email validation */
         var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if(!($('#email').val().match(regex))){
             $('#email').css ("border-color", "#f70515");
             valid = false;
-            console.log(valid);
         }
         else {
             $('#email').css ("border-color", "#6BB343");
             $('#err_email').html("");
             valid = true;
-            console.log(valid);
         }
     });
-    $('#message').on('input', function () {
+    $('#message').on('input', function () {   /* message validation */
         if($('#message').val() == ""){
             $('#message').css ("border-color", "#f70515");
             valid = false;
-            console.log(valid);
+
         }
         else {
             $('#message').css ("border-color", "#6BB343");
             $('#err_message').html("");
             valid = true;
-            console.log(valid);
+
         }
         if(valid){
-            console.log("fkdjfk");
             $('#send_btn').removeAttr ("disabled");
         }
         else{
@@ -144,7 +137,7 @@ $(document).ready(function() {
         var number = $('#number').val ();
         var message = $('#message').val ();
         $.ajax({
-            url:    	'send_mail.php',
+            url:    	'actions/send_mail.php',
             type:		'POST',
             cache: 		false,
             data: {
@@ -158,12 +151,12 @@ $(document).ready(function() {
                 $('#send_btn').attr ("disabled", "disabled");
             },
             success: function(data) {
-                if (data == true) {
+                if (data == "Повідомлення надіслано)<br>Ми з вами зв'жемося") {
                     $('#name').val ("");
                     $('#email').val ("");
                     $('#number').val("");
                     $('#message').val ("");
-                    $('#success_msg').html("Повідомлення надіслано.<br>Ми зв'яжемося з вами найближчим часом");
+                    $('#success_msg').html(data);
                     $('#err_number, #err_message, #err_email').html("");
                     $('#email').css ("border-color", "#A5B3B1");
                     $('#number').css ("border-color", "#A5B3B1");
@@ -172,7 +165,7 @@ $(document).ready(function() {
                     $('#send_btn').attr ("disabled", "disabled");
                 } else {
                     if (data == false)
-                        alert ("Что-то пошло не так! Сообщение не отправлено");
+                        $('#err_message').html(data);
                     else {
                         switch (data) {
                             case "Ім'я не вказано":
@@ -232,31 +225,29 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
  */
 function getContent(id){
     var tab_content = document.getElementById('tab-content');
-    tab_content.innerHTML = '<div class="loading_gif"><img src="../img/loading.gif" /> </div>';
+    tab_content.innerHTML = '<div class="loading_gif"><img src="img/loading.gif" /> </div>';
+
     $.ajax({
-        url: "get_page.php",
+        url: "actions/get_img_gallery.php",
         data:'id='+id,
         type: "POST",
         success:function(data){
 
             if(data == 0){
                 tab_content.innerHTML = "Галерея пуста!!";
-                console.log(data);
             }
             else {
                 tab_content.innerHTML = data;
             }
-
         }
     });
 }
-
 /*
      delete image from galery
  */
 function delete_request(id){
     $.ajax({
-        url: "delete-image.php",
+        url: "actions/delete-image.php",
         data: 'id='+id,
         type: "POST",
         success: function (data) {

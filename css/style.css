@@ -58,7 +58,7 @@ header{
 	border: inherit;
 	transition: padding 0.5s;
 }
-/* dynamical naviigation */
+/* dynamical navigation */
 
    .headhesive{
   background: #262628;
@@ -776,8 +776,7 @@ footer{
 }
 .loading_gif img{
     margin-top: 50px;
-    width: 7%;
-
+    width: 10%;
 }
 /*   add images in gallery.... form */
 .add_img td{
@@ -926,5 +925,3 @@ footer{
 #add_images #brnu{
     padding: 3px;
 }
-
-/*//////TEST/////////////////////////*/

@@ -1,5 +1,5 @@
 <?php
-include_once "db.php";
+include_once "../configure/db.php";
 $data = null;
 
 $result = R::getAll("SELECT * FROM photos where id_kategorii =".$_REQUEST['id']." ORDER BY id DESC");
@@ -16,9 +16,9 @@ else {
             <img src="'. $row['location_mini'] . '" id="img_'.$row['id'].'" title="'.$row['name_photo'].'" alt="'. $row['alt'].'" />
         </a>
         <div class="col-md-3">
-            <a href="#openModal_'.$row['id'].'" id="del_'.$row['id'].'"><img src="../img/button_cancel.png"></a>
+            <a href="#openModal_'.$row['id'].'" id="del_'.$row['id']. '"><img src="img/button_cancel.png"></a>
 
-            <div id="openModal_'.$row['id'].'" class="modalDialog">
+            <div id="openModal_' .$row['id'].'" class="modalDialog">
                 <div>
                     <a href="#close" title="Закрыть" class="close">X</a>
                     <h2></h2>
