@@ -225,7 +225,11 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
  */
 function getContent(id){
     var tab_content = document.getElementById('tab-content');
+<<<<<<< HEAD
     tab_content.innerHTML = '<div class="loading_gif"><img src="img/loading.gif" /> </div>';
+=======
+    tab_content.innerHTML = '<div class="loading_gif"><img src="../img/loading.gif" /> </div>';
+>>>>>>> 4f6b81c595c7bde9c8452fb4b44b75f74b3ab314
 
     $.ajax({
         url: "actions/get_img_gallery.php",
