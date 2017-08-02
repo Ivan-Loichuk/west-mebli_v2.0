@@ -495,7 +495,7 @@ footer{
     padding: 10px 0;
 }
 .bottom .dropdown-menu{
-    top: -230px;
+    top: -240px;
     left: -220px;
 }
 .dropdown-menu h4{
@@ -549,8 +549,28 @@ footer{
     color: red;
     text-decoration: none;
 }
+.logout-btn{
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 10px;
+}
+.logout-btn:hover{
+    border: none;
+    color: red;
+    padding: 10px;
+}
+#login{
+    margin-top: 15px;
+}
 
+#log_in, #password{
+    margin: 15px 0px 15px 0px;
+}
 
+#log{
+    margin-bottom: 10px;
+}
 
 /* RWD */
 @media (min-width: 1920px) {
@@ -890,13 +910,13 @@ footer{
 .btn-file {
     position: relative;
     overflow: hidden;
-    float: right;
     height: 40px;
-    width: 50%;
+    width: 10%;
     color: white;
     border-radius: 5px;
     background: #182334;
     line-height: 25px;
+    bottom: 1px;
 }
 
 .btn-file input[type=file] {
@@ -905,7 +925,6 @@ footer{
     right: 0;
     min-width: 100%;
     min-height: 100%;
-
     text-align: right;
     filter: alpha(opacity=0);
     opacity: 0;
@@ -919,9 +938,27 @@ footer{
     color: white;
 }
 #add_images #img_category{
-    width: 100%;
+    width: 10%;
     height: 40px;
+}
+#add_images form{
+    margin-top: 10px;
 }
 #add_images #brnu{
     padding: 3px;
+    width: 34%;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+#submit_add_foto{
+    height: 40px;
+    width: 10%;
+    background-color: #182334;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+#submit_add_foto:hover{
+    background-color: #224863;
 }

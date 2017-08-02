@@ -204,6 +204,34 @@ $(document).ready(function() {
             }
         });
     });
+
+
+    $("#login").click(function () {
+        var login = $('#log_in').val ();
+        var password = $('#password').val();
+        $.ajax({
+            url:    	'actions/login.php',
+            type:		'POST',
+            cache: 		false,
+            data: {
+                'login' :login,
+                'password':password
+            },
+            dataType:	'html',
+            success: function(data) {
+                if(data == 1){
+                    $("#log").css('color', '#1DB30A');
+                    $( "#log" ).html("Ви увійшли)");
+                    window.location.href='gallery_view.php';
+                }
+                else{
+                    $("#log").css('color', '#f70515');
+                    $( "#log" ).html(data);
+                }
+            }
+        });
+    });
+
 });
 
 // section <how to order>, mouse event
@@ -225,11 +253,7 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
  */
 function getContent(id){
     var tab_content = document.getElementById('tab-content');
-<<<<<<< HEAD
     tab_content.innerHTML = '<div class="loading_gif"><img src="img/loading.gif" /> </div>';
-=======
-    tab_content.innerHTML = '<div class="loading_gif"><img src="../img/loading.gif" /> </div>';
->>>>>>> 4f6b81c595c7bde9c8452fb4b44b75f74b3ab314
 
     $.ajax({
         url: "actions/get_img_gallery.php",

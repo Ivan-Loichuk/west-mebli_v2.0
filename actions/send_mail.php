@@ -2,13 +2,14 @@
 include_once '../languages/lang_ua.php';
 $lang = new lang_ua();
 
-$to = $lang->lang_ua['send_mail_info'][0];
-$subject = $lang->lang_ua['send_mail_info'][1];
-$headers = $lang->lang_ua['send_mail_info'][2];
-$headers .= $lang->lang_ua['send_mail_info'][3];
-$headers .= $lang->lang_ua['send_mail_info'][4];
-$headers .= $lang->lang_ua['send_mail_info'][5];
-$headers .= $lang->lang_ua['send_mail_info'][6];
+$to = "contact@west-mebli.com.ua";
+$subject = "WEST-MEBLI Нове повідомлення";
+$headers = "From: west-mebli.com.ua\r\n";
+$headers .= "Reply-To: contact@west-mebli.com.ua\r\n";
+$headers .= "CC: vanua.loichuk@gmail.com\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers.= "Content-Transfer-Encoding: 8bit\n\n";
 
 $user_name = $_POST['name'];
 $user_mail = $_POST['email'];
@@ -46,6 +47,8 @@ $message .= '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; 
+    charset=windows-1251" />
 </head>
 <body>
 <p style="color: #1db30a; font-size: 20px">' . $lang->lang_ua['send_mail_content'][0] . '</p><br>

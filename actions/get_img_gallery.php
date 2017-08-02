@@ -5,6 +5,7 @@ $data = null;
 $result = R::getAll("SELECT * FROM photos where id_kategorii =".$_REQUEST['id']." ORDER BY id DESC");
 
 if(empty($result) == true){
+
     return 0;
 }
 else {
@@ -22,7 +23,7 @@ else {
                 <div>
                     <a href="#close" title="Закрыть" class="close">X</a>
                     <h2></h2>
-                    <p>Ви спаравді хочете видалити фото?</p>
+                    <p>Ви спаравді бажаєте видалити фото?</p>
                     <form action="" method="post">
                         <input type="button" href="#close" id="delete" value="Tak" onClick="delete_request('.$row['id'].')"/>
                     </form>
@@ -42,6 +43,8 @@ else {
         endif;
     }
 echo $data;
+    mysqli_free_result($result);
+
 }
 
 ?>

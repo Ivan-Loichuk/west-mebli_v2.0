@@ -12,6 +12,7 @@ include_once "../configure/db.php";
         echo $deleteItem;
     }
     else{
+
         echo 0;
     }
 

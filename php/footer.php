@@ -60,23 +60,16 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Admin</b> <span class="caret"></span></a>
                             <ul id="login-dp" class="dropdown-menu">
                                 <li>
-                                        <div class="col-md-12">
+                                        <div class="col-md-12 login_form">
                                             <h4>Вхід(admin)</h4>
-                                            <form class="form" action="actions/login.php" method="post" id="login-nav">
-                                                <div class="form-group">
-                                                    <label class="sr-only" for="exampleInputEmail2">Логин</label>
-                                                    <input type="text" class="form-control" name="log_in" placeholder="Логин" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="sr-only" for="exampleInputPassword2">Пароль</label>
-                                                    <input type="password" class="form-control" name="password" placeholder="Пароль" required>
-
-                                                </div>
-                                                <div class="form-group">
-                                                    <button type="submit" class="btn btn-primary btn-block" name="do_login">Вхід</button>
-                                                </div>
-                                                <a href="actions/logout.php" >Вийти</a><br/>
+                                            <form class="form" action="actions/logout.php" method="post" id="login-nav">
+                                                    <input type="text" class="form-control" name="log_in" id="log_in" placeholder="Логин" >
+                                                    <input type="password" class="form-control" id="password" name="password" placeholder="Пароль" >
+                                                    <input type="button" class="btn btn-primary btn-block" id="login" name="do_login" value="Увійти">
+                                                    <input type="submit" class="logout-btn" id="logout" value="Bийти">
                                             </form>
+                                            <div id="log"></div>
+
                                         </div>
                                 </li>
                             </ul>

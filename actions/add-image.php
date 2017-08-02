@@ -17,7 +17,7 @@ if(isset($_POST['Submit'])) {
                     $location = "../img/foto_original/" . $_FILES["file"]["name"];
                     $location_mini = "../img/miniaturki/mini-" . $_FILES["file"]["name"];
 
-                    if (R::count('photos', "location = ? ", array($location)) > 0) {
+                    if (R::count('photos', "location = ? ", array("img/foto_original/" . $_FILES["file"]["name"])) > 0) {
                         $errors = $lang->lang_ua['add_image_errors'][0];
                     }
                     if (empty($errors)) {

@@ -19,6 +19,7 @@ $lang = new lang_ua();
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="img/shortcut_icon.png" type="image/x-icon">
 
 </head>
 <body>
@@ -32,14 +33,13 @@ $lang = new lang_ua();
            <div class="col-md-12">
                <div id="add_images">
                    <form action="actions/add-image.php" method="post" enctype="multipart/form-data">
-                       <table class="add_img">
-                           <tr>
-                               <td><span class="btn btn-default btn-file">
+
+                               <span class="btn btn-default btn-file">
                                        Фото<input type="file" name="file" class="ed">
-                                     </span></td>
-                               <td> <input name="name" type="text" class="ed" id="brnu" placeholder="Назва картинки"/></td>
-                               <td> <input name="alt" type="text" class="ed" id="brnu" placeholder="Альтернативний опис"/></td>
-                               <td> <select id="img_category" name="img_category">
+                                     </span>
+                                <input name="name" type="text" class="ed" id="brnu" placeholder="Назва картинки"/>
+                                <input name="alt" type="text" class="ed" id="brnu" placeholder="Альтернативний опис"/>
+                                <select id="img_category" name="img_category">
                                        <option value="1" selected="selected">Шафи-купе</option>
                                        <option value="2">Кухні</option>
                                        <option value="3">Спальні</option>
@@ -48,10 +48,8 @@ $lang = new lang_ua();
                                        <option value="6">Офісні меблі</option>
                                        <option value="7">Матраси</option>
                                     </select>
-                               </td>
-                               <td> <input type="submit" name="Submit" value="Додати" id="submit_add_foto"/></td>
-                           </tr>
-                       </table>
+
+                                <input type="submit" name="Submit" value="Додати" id="submit_add_foto"/>
 
                    </form>
                </div>
