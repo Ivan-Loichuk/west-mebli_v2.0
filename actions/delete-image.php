@@ -7,6 +7,7 @@ include_once "../configure/db.php";
         foreach ($result as $row) {
             unlink('../' . $row['location']);
             unlink('../' . $row['location_mini']);
+            unlink('../' . $row['location_resize']);
         }
         $result = R::getAll("DELETE  FROM photos WHERE id=" . $deleteItem);
         echo $deleteItem;

@@ -51,7 +51,6 @@
                         <input name="lang_ua" type="submit" value="українська">
                         </form> </li>
                 </ul>
-
             </div>
             <div class="col-md-4 col-sm-2 col-xs-12">
                 <div class="admin-btn">

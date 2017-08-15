@@ -3,7 +3,6 @@ var options ={
 	offset: 200
 }
 var header = new Headhesive('.nav-menu', options);
-
 $(document).ready(function() {
     // Gallery
     $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){
@@ -20,7 +19,6 @@ $(document).ready(function() {
     });
 
 
- 
     // navigation on click
 	$("#menu, .image-contact").on("click","a", function (event) {
 		//We cancel the standard processing of the goods by reference
@@ -60,13 +58,34 @@ $(document).ready(function() {
         });
 
 
-/* gategory select - save value  */
+/* add image form - save value  */
     var selCategory = sessionStorage.getItem("SelItem");
-    $('#img_category').val(selCategory);
+    if(selCategory != null){
+       $('#img_category').val(selCategory);
+    }
+    var nameInput = sessionStorage.getItem("name");
+    var altInput = sessionStorage.getItem("alt");
+    var hover_box_info_input = sessionStorage.getItem("hover_box_info");
+
+    $('#img_name').val(nameInput);
+    $('#img_alt').val(altInput);
+    $('#img_hover_box_info').val(hover_box_info_input);
 
     $('#img_category').change(function() {
         var selVal = $(this).val();
         sessionStorage.setItem("SelItem", selVal);
+    });
+    $('#img_name').change(function () {
+        var selVal = $(this).val();
+        sessionStorage.setItem("name", selVal);
+    });
+    $('#img_alt').change(function () {
+        var selVal = $(this).val();
+        sessionStorage.setItem("alt", selVal);
+    });
+    $('#img_hover_box_info').change(function () {
+        var selVal = $(this).val();
+        sessionStorage.setItem("hover_box_info", selVal);
     });
 
 //Callback form
@@ -231,7 +250,6 @@ $(document).ready(function() {
             }
         });
     });
-
 });
 
 // section <how to order>, mouse event
@@ -266,6 +284,7 @@ function getContent(id){
             }
             else {
                 tab_content.innerHTML = data;
+                initBoxModal();
             }
         }
     });
@@ -291,7 +310,33 @@ function delete_request(id){
     });
 }
 
+function initBoxModal(){
+    /*
+     * hover images box
+     * */
+    $(".img_link").each(function( index ) {
+        var id = $(this)[0].id;
+        $(this).hover(function () {
+                openModalPopupWindow(id);
+            },
+            function() {
+                closeModalPopupWindow(id);
+            });
+    });
 
+    function openModalPopupWindow(id) {
+        $( "#modal_box_"+id ).each(function( index ) {
+            $(this).stop().hide().slideToggle( 500 );
+        });
+    }
+
+    function closeModalPopupWindow(id) {
+        $( "#modal_box_"+id ).each(function( index ) {
+            $(this).stop().show().slideToggle( 500 );
+        });     // Make the modal popup stuff invisible:
+    }
+
+}
 
 
 

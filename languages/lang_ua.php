@@ -27,7 +27,7 @@ class lang_ua
             "Сучасні кухні"
         );
 
-        $this->lang_ua['index_main_title'] = "Меблі на замовлення у Рівному";
+        $this->lang_ua['index_main_title'] = "WEST-MEBLI - виготовлення меблів на замовлення в місті Рівне";
 
         $this->lang_ua['p_carousel'] = array(
             "Виготовлення корпусних меблів на замовлення.",
@@ -53,7 +53,7 @@ class lang_ua
         $this->lang_ua['headers'] = array(
             "Галерея робіт",
             "Як замовити?",
-            "Про на",
+            "Про наc",
             "Контакт"
         );
 
@@ -245,7 +245,7 @@ class lang_ua
             "Спальні на замовлення"
         );
 
-        ;$this->lang_ua['gallery_main_title'] = "Галерея West-mebli - корпусні меблі";
+        ;$this->lang_ua['gallery_main_title'] = "Галерея West-mebli - корпусні меблі на замовлення в місті Рівному";
 
         $this->lang_ua['gallery_nav_sidebar'] = array(
             "Шафи купе",

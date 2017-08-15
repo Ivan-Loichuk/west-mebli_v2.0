@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /configure/
+Disallow: /actions/
+Disallow: /js/
+
+Allow: /php/
+Allow: /gallery_view.php
+Allow: /index.php
+Allow: /sitemap.xml
+Allow: /languages/
+Allow: /img/
+Allow: /css/
+
+
+
+Sitemap: http://west-mebli.com.ua/sitemap.xml
+
+Host: www.s9.thehost.com.ua
+
