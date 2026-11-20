@@ -1,3 +1,5 @@
+import { MapPin } from "lucide-react";
+
 type LogoProps = {
   /** Show the "Рівне" label after a divider (hidden below the md breakpoint). */
   showCity?: boolean;
@@ -33,7 +35,10 @@ export function Logo({ showCity = false, className = "" }: LogoProps) {
       {showCity && (
         <>
           <span className="ml-1.5 hidden h-8 w-px bg-white/20 md:block" aria-hidden />
-          <span className="ml-1.5 hidden text-sm font-medium text-white/70 md:block">Рівне</span>
+          <span className="ml-1.5 hidden items-center gap-1 text-sm font-medium text-white/70 md:flex">
+            <MapPin className="size-4 text-brand-400" aria-hidden />
+            Рівне
+          </span>
         </>
       )}
     </span>

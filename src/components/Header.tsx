@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { MapPin, Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { nav, site } from "@/content/site";
 import { Logo } from "./Logo";
 
@@ -20,11 +20,7 @@ export function Header() {
   return (
     <>
       <div className="bg-ink-950 text-sm text-white/75">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-4 py-2">
-          <span className="flex items-center gap-1.5">
-            <MapPin className="size-4 text-brand-400" aria-hidden />
-            {site.city}
-          </span>
+        <div className="mx-auto flex max-w-6xl items-center justify-center px-4 py-2 sm:justify-end">
           <span className="flex flex-wrap gap-x-5">
             {site.phones.map((p) => (
               <a key={p.href} href={p.href} className="flex items-center gap-1.5 hover:text-white">
