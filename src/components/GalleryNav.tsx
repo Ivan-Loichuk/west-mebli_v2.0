@@ -1,9 +1,24 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 import { categories } from "@/content/categories";
 
 export function GalleryNav({ active }: { active?: string }) {
+  const nav = useRef<HTMLElement>(null);
+
+  // On narrow screens the tabs are a horizontal strip; keep the current one visible.
+  useEffect(() => {
+    const current = nav.current?.querySelector<HTMLElement>('[aria-current="page"]');
+    current?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [active]);
+
   return (
-    <nav aria-label="Категорії галереї" className="-mx-4 overflow-x-auto px-4 lg:mx-0 lg:overflow-visible lg:px-0">
+    <nav
+      ref={nav}
+      aria-label="Категорії галереї"
+      className="-mx-4 overflow-x-auto px-4 py-1 [scrollbar-width:none] lg:mx-0 lg:overflow-visible lg:px-0 lg:py-0 [&::-webkit-scrollbar]:hidden"
+    >
       <ul className="flex gap-2 lg:flex-col">
         <li>
           <Link

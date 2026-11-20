@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function GalleryPage() {
   return (
-    <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 lg:grid-cols-[220px_1fr] lg:py-16">
+    <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-8 px-4 py-12 lg:grid-cols-[220px_minmax(0,1fr)] lg:py-16">
       <aside className="lg:sticky lg:top-24 lg:h-fit">
         <GalleryNav />
       </aside>
