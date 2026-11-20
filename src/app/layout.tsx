@@ -1,9 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Open_Sans } from "next/font/google";
+import { Montserrat, Open_Sans } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { site } from "@/content/site";
 import "./globals.css";
+
+const montserrat = Montserrat({
+  subsets: ["latin", "cyrillic"],
+  weight: ["500", "600", "800"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
 
 const openSans = Open_Sans({
   subsets: ["latin", "cyrillic"],
@@ -16,7 +23,6 @@ export const metadata: Metadata = {
   title: { default: site.title, template: `%s | ${site.name}` },
   description: site.description,
   keywords: site.keywords,
-  icons: { icon: "/img/shortcut_icon.png" },
   openGraph: {
     type: "website",
     locale: "uk_UA",
@@ -44,7 +50,7 @@ const localBusiness = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="uk" className={openSans.variable}>
+    <html lang="uk" className={`${openSans.variable} ${montserrat.variable}`}>
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { categories } from "@/content/categories";
 import { site } from "@/content/site";
+import { Logo } from "./Logo";
 
 function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -16,6 +17,7 @@ export function Footer() {
     <footer className="bg-ink-950 text-white/70">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-3">
         <div>
+          <Logo className="mb-6" />
           <h2 className="text-lg font-bold text-white">Про нас</h2>
           <p className="mt-3 leading-relaxed">
             Виготовлення корпусних меблів на замовлення в місті Рівному. «WEST-MEBLI» пропонує професійний дизайн і

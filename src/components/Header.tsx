@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MapPin, Menu, Phone, X } from "lucide-react";
 import { nav, site } from "@/content/site";
-import logo from "../../public/img/west-mebli_logotype.png";
+import { Logo } from "./Logo";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -43,8 +42,8 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <Link href="/" aria-label="WEST-MEBLI — на головну" onClick={() => setOpen(false)}>
-            <Image src={logo} alt="WEST-MEBLI — виготовлення меблів у Рівному" priority className="h-10 w-auto" />
+          <Link href="/" aria-label="Меблі на замовлення, Рівне — на головну" onClick={() => setOpen(false)}>
+            <Logo showCity />
           </Link>
 
           <nav aria-label="Головне меню" className="hidden md:block">
